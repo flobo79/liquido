@@ -1,0 +1,374 @@
+<div id="img_saved"></div>
+
+<table id="parents">
+	{$parents}
+
+<div id="icon">
+	<img src="gfx/page_big.gif" alt="page" />
+</div>
+
+<div id="iconcolon">
+	
+	<div id="details">
+		<b id="page_title">{$data.title}</b><br />
+		(ID: {$data.id}, Status: {$status})<br />
+		erstellt: {$data.date|date_format:"%d.%m.%Y"}<br />
+		{if $data.changedate}geŠndert: {$data.changedate}{/if}<br />
+		<br />
+
+		{if $data.cache.refresh == "6"}
+		  <table width="204" border="0" cellspacing="0" cellpadding="0">
+			<tr> 
+			  <td width="43"><a href="?refresh={$data.id}"><img src="gfx/zahnrad.gif" border="0"></a></td>
+			  <td width="161"><a href="?refresh={$data.id}">&Auml;nderungen 
+				<br/>
+				ver&ouml;ffentlichen </a></td>
+			</tr>
+		  </table>
+		  <br />
+		  {/if}
+		  
+		  {if $data.info}
+		  <table width="317" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+			  <td width="24" align="center" valign="top"><img src="../../gfx/info2.gif" width="15" height="15"></td>
+			  <td width="293">{$data.info|nl2br}<br /><br /></td>
+			</tr>
+		  </table>
+		  <br />
+		{/if}
+	
+		{if $access.c4}
+		  <table border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="32"><a href="javascript:part('eigenschaften','')" onMouseOver="MM_swapImage('more_prop','','gfx/more_o.gif',1);" onMouseOut="MM_swapImgRestore();"><img src="gfx/more.gif" alt="Optionen einblenden" name="more_prop"></a></td>
+				<td><a href="javascript:part('eigenschaften','')" onMouseOver="MM_swapImage('more_prop','','gfx/more_o.gif',1);" onMouseOut="MM_swapImgRestore();">Eigenschaften</a></td>
+			  </tr>
+		  </table>
+	
+		<div id="eigenschaften" class="hidden">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr> 
+				<td width="15" height="15" background="../../gfx/x_box/coinsupg.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td height="15" background="../../gfx/x_box/sup.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td width="15" height="15" background="../../gfx/x_box/coinsupd.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+			  </tr>
+			  <tr> 
+				<td width="15" background="../../gfx/x_box/g.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td background="../../gfx/x_box/fond.gif" align="left" width="100%">
+					
+					<form action="" method="post" name="properties" accept-charset="utf-8">
+					<table width="300" border="0" cellpadding="0" cellspacing="0">
+					  <tr> 
+						<td width="56" valign="top">Titel:</td>
+						<td width="244" valign="top"><input name="title" type="text" value="{$data.title}" size="35" maxlength="50" class="text" onkeyup="$('link').value=L.clean_url(this.value);"></td>
+					  </tr>
+					  <tr> 
+						<td valign="top">Info: 
+						  
+						</td>
+						<td valign="top"><textarea name="info" cols="33" rows="5" class="text">{$data.info}</textarea></td>
+					  </tr>
+					  <tr> 
+						<td colspan="2" valign="top" class="smalltext">&nbsp;</td>
+					  </tr>
+					</table>
+					<table border="0" cellpadding="0" cellspacing="0">
+					  <tr> 
+						<td>Von Suche ausschliessen:</td>
+						<td >
+						  <input type="checkbox" name="public" value="1" {if $data.public}checked{/if}>
+						  <a href="#"> <img src="../../gfx/info.gif" alt="?" title="Ist dieser Bereich fŸr alle zugŠnglich?" /></a></td>
+					  </tr>
+					  <tr>
+                        <td height="30">Startseite: </td>
+					    <td><a href="#">
+                          <input type="checkbox" name="setstartpage" value="1" {if $data.id == $startpage}checked{/if} />
+                        </a><a href="#"> <img src="../../gfx/info.gif" alt="?" title="Diese Seite als Startseite festlegen" /></a></td>
+				      </tr>
+					  <tr style="display:none;"> 
+						<td width="161" height="30">Seite als RSS veršffentlichen</td>
+						<td width="165"><input type="checkbox" name="promoteAsRSS" value="1" {if $data.promoteAsRSS}checked{/if} />
+						<a href="#"> <img src="../../gfx/info.gif" alt="" title="Diese Seite als RSS ver&ouml;ffentlichen" /></a>
+						</td>
+					  
+					  </tr>
+					  <tr style="display:none">
+					    <td height="30">Breite des Inhalts: </td>
+					    <td><input name="width" type="text" value="{$data.width}" size="4" maxlength="5" class="text" id="edit[title]" />
+					      px</td>
+				      </tr>
+					  <tr> 
+						<td height="30">Vorlage verwenden: </td>
+						<td>{$templatelist}</td>
+					  </tr>
+					  <tr> 
+						<td width="161" height="30">Unterseite von:</td>
+						<td width="165">{$pageslist}</td>
+					  </tr>
+					  <tr> 
+						<td width="161" height="30">Seiten URL</td>
+						<td width="165"><input name="cleanURL" type="text" value="{$data.cleanURL}" size="35" maxlength="50" class="text" id="link"><br />
+						{if !$data.cleanURL}<span style="color:#666">System-URL: {$data.cleanURLSystem}</span>{/if}
+						</td>
+					  </tr>
+					  
+					  <tr> 
+						<td height="30" colspan="2"> 
+						  {if $access.c5}
+							<a href="javascript:checkSyslinkAndSave();" onMouseOver="MM_swapImage('save_prop','','../../gfx/save_o.gif',1);" onMouseOut="MM_swapImgRestore()">&nbsp;<img src="../../gfx/save.gif" name="savepropx2" id="save_prop" ></a> 
+						  {/if}
+						  </td>
+					  </tr>
+					</table>
+				  </form>			</td>
+				<td width="15" background="../../gfx/x_box/d.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+			  </tr>
+			  <tr> 
+				<td width="15" height="15" background="../../gfx/x_box/coininfg.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td height="15" background="../../gfx/x_box/inf.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td width="15" height="15" background="../../gfx/x_box/coininfd.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+			  </tr>
+			</table>
+			<a href="javascript:part('eigenschaften')" onMouseOver="MM_swapImage('less_prop','','gfx/less_o.gif',1);" onMouseOut="MM_swapImgRestore()"><img src="gfx/less.gif" alt="Optionen ausblenden" name="less_prop"></a>
+			<br/>
+		  </div>
+		{/if}
+	
+		{if $access.c3}
+		<table width="301" border="0" cellspacing="0" cellpadding="0">
+		  <tr> 
+			<td width="32"><a href="javascript:part('delete','')" onMouseOver="MM_swapImage('more_del','','gfx/more_o.gif',1);" onMouseOut="MM_swapImgRestore()"><img src="gfx/more.gif" alt="Optionen einblenden" border="0" name="more_del"></a></td>
+			<td width="269"><a href="javascript:part('delete','')" onMouseOver="MM_swapImage('more_del','','gfx/more_o.gif',1);" onMouseOut="MM_swapImgRestore()">Seite l&ouml;schen</a></td>
+		  </tr>
+		</table>
+			
+		  <div id="delete" class="hidden">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr> 
+				<td width="15" height="15" background="../../gfx/x_box/coinsupg.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td height="15" background="../../gfx/x_box/sup.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td width="15" height="15" background="../../gfx/x_box/coinsupd.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+			  </tr>
+			  <tr> 
+				<td width="15" background="../../gfx/x_box/g.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				
+				<td background="../../gfx/x_box/fond.gif" align="left" width="100%"><form action="" method="post" name="delform" id="delform">
+					<p>Diese Seite wirklich l&ouml;schen? Es werden alle Unterseiten 
+					  gel&ouml;scht.</p>
+					<p><a href="javascript:document.getElementById('delform').submit()" onMouseOver="MM_swapImage('ex_del','','../../components/contents/gfx/ok_o.gif',1);" onMouseOut="MM_swapImgRestore()"><img src="../../components/contents/gfx/ok.gif" border="0" name="ex_del"></a> 
+					  <input name="trash[id]" type="hidden"  value="{$data.id}">
+					  <input name="trash[parent]" type="hidden"  value="{$data.parent}">
+					  <input name="trash[type]" type="hidden"  value="contents">
+					</p>
+				  </form></td>
+				<td width="15" background="../../gfx/x_box/d.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+			  </tr>
+			  <tr> 
+				<td width="15" height="15" background="../../gfx/x_box/coininfg.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td height="15" background="../../gfx/x_box/inf.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td width="15" height="15" background="../../gfx/x_box/coininfd.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+			  </tr>
+			</table>
+			  
+			<a href="javascript:part('delete')" onMouseOver="MM_swapImage('less_del','','gfx/less_o.gif',1);" onMouseOut="MM_swapImgRestore();"><img src="gfx/less.gif" alt="Optionen ausblenden" border="0" name="less_del"></a><br />
+			<br />
+		 </div>
+		{/if}
+		
+		{if $access.c8}
+		 <table width="301" border="0" cellspacing="0" cellpadding="0">
+			<tr> 
+			  <td width="32"><a href="javascript:part('publishwindow','')" onMouseOver="MM_swapImage('more_pub','','gfx/more_o.gif',1);" onMouseOut="MM_swapImgRestore();"><img src="gfx/more.gif" alt="Optionen einblenden" name="more_pub" border="0"></a></td>
+			  <td width="269"><a href="javascript:part('publishwindow','')" onMouseOver="MM_swapImage('more_pub','','gfx/more_o.gif',1);" onMouseOut="MM_swapImgRestore();">Seite ver&ouml;ffentlichen</a></td>
+			</tr>
+		  </table>
+		  
+		  <div id="publishwindow"class="hidden">
+		 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr> 
+				<td width="15" height="15" background="../../gfx/x_box/coinsupg.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td height="15" background="../../gfx/x_box/sup.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td width="15" height="15" background="../../gfx/x_box/coinsupd.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+			  </tr>
+			  <tr> 
+				<td width="15" background="../../gfx/x_box/g.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td background="../../gfx/x_box/fond.gif" align="left" width="100%">
+		
+				
+					<form action="" method="post" name="publish" id="publish">
+				  {if $data.status == "0"}
+					<table width="300" border="0" cellspacing="0" cellpadding="0">
+						<tr> 
+						  <td colspan="2">Diese Seite jetzt online schalten?</td>
+						</tr>
+						<tr> 
+						  <td width="50" height="37">
+							<a href="#" onClick="javascript:document.getElementById('publish').submit(); return false" onMouseOver="MM_swapImage('ok','','gfx/ok_o.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="gfx/ok.gif" alt="bestŠtigen" border="0" name="ok"></a>					  </td>
+						  <td width="239"><input name="publish[allsubpages]" type="checkbox" value="ok">
+							alle Unterseiten online schalten 
+							<input name="publish[set]" type="hidden" value="1"> <input name="publish[id]" type="hidden" value="{$data.id}">					  </td>
+						</tr>
+					  </table>
+					{else}
+					  <table width="300" border="0" cellspacing="0" cellpadding="0">
+						<tr> 
+						  <td colspan="2">Diese Seite jetzt offline schalten?</td>
+						</tr>
+						<tr> 
+						  <td width="50" height="37"><a href="#" onclick="$('publish').submit(); return false" onMouseOver="MM_swapImage('ok','','gfx/ok_o.gif',1);" onMouseOut="MM_swapImgRestore()"><img src="gfx/ok.gif" alt="bestŠtigen" name="ok" border="0"></a></td>
+						  <td width="246"><input name="publish[allsubpages]" type="checkbox" value="ok">
+							alle Unterseiten offline schalten 
+							<input name="publush[set]" type="hidden" value="0"> <input name="publish[id]" type="hidden" value="{$data.id}"></td>
+						</tr>
+					  </table>
+					{/if}
+					</form>
+				</td>
+				<td width="15" background="../../gfx/x_box/d.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+			  </tr>
+			  <tr> 
+				<td width="15" height="15" background="../../gfx/x_box/coininfg.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td height="15" background="../../gfx/x_box/inf.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+				<td width="15" height="15" background="../../gfx/x_box/coininfd.gif"><img src="../../gfx/x_box/space15_15.gif" width="15" height="15" alt="none"></td>
+			  </tr>
+			</table> 
+			<a href="javascript:part('publishwindow')" onMouseOver="MM_swapImage('less_pub','','gfx/less_o.gif',1);" onMouseOut="MM_swapImgRestore()"><img src="gfx/less.gif" alt="Optionen ausblenden" border="0" name="less_pub"></a><br />
+			<br />
+		  </div>
+			{/if}
+		 
+		 
+		  <table width="301" border="0" cellspacing="0" cellpadding="0">
+			<tr> 
+			  <td width="32"><a href="javascript:part('statswindow','');"><img src="gfx/more.gif" alt="Optionen einblenden" name="more_stats" border="0"></a></td>
+			  <td width="269"><a href="javascript:part('statswindow','');" >Seitenstatstik</a></td>
+			</tr>
+		  </table>
+		  
+		<div id="statswindow" class="box {if !$showstat}hidden{/if}" style="width:500px">
+		 	<div class="top"><div class="inner"></div></div>
+		 	<div class="body"><div class="inner">
+			 	
+					
+			 </div></div>
+			<div class="bottom"><div class="inner"></div></div>
+		</div>
+		
+	
+		<table width="301" border="0" cellspacing="0" cellpadding="0" onclick="$('box_blocks').style.display == 'block' ? $('box_blocks').style.display = 'none' : $('box_blocks').style.display = 'block'">
+			<tr> 
+			  <td width="32"><a href="#"><img src="gfx/more.gif" alt="Optionen einblenden" name="more_stats" border="0"></a></td>
+			  <td width="269"><a href="#">Block Zuweisung</a></td>
+			</tr>
+		</table>
+		  
+		  
+	  <div id="box_blocks" class="box hidden" style="width:100%">
+		 <div class="top"><div class="inner"></div></div>
+		 <div class="body"><div class="inner" style="padding:10px;">
+		 	Weisen Sie diese Seite einem Block zu und setzen Sie die Postition innerhalb des Blockes, indem Sie die Seite per Drag-&-Drop verschieben.
+			Wenn Sie noch keinen Block erstellt haben, können Sie dies im Vorlagen-Modul tun.<br><br>
+			<br>
+			<table>
+				<tr>
+					<td valign="top">			
+					<b>Vorhandene Blöcke:</b>		
+						<ul id="box_blocks_list">
+						{foreach from=$blocks item=e}
+							<li id="block{$e.id}">{$e.title}</li>
+						{/foreach}
+						</ul>
+					</td>
+					
+					<td valign="top">
+						<b>Seiten im Block:</b>
+						<div id="box_blocks_nodes"></div>
+					</td>
+				
+					<td valign="top" id="box_blocks_settings">
+						<div id="settings_not_contained" style="display:none">
+							<input type="button" onclick="blockAddNode()" value="Seite hinzufŸgen" />
+							
+						</div>
+						<div id="settings_contained" style="display:none">
+							<input type="button" onclick="blockRemoveNode()" value="Seite entfernen" />
+							
+						</div>
+					</td>
+				</tr>
+			</table>
+			
+		 </div></div>
+		 
+		 <div class="bottom"><div class="inner"></div></div>
+	  </div>
+	</div>
+</div> 
+
+<div id="childlist">
+	{$childlist}
+</div>
+
+
+
+
+<form action="" method="post" name="form_newpage">
+    <div id="box_newPage" class="hidden">
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="17" height="1"></td>
+          <td width="11"></td>
+          <td></td>
+          <td width="17"></td>
+          <td width="1"></td>
+        </tr>
+        <tr> 
+          <td rowspan="2"><img src="../../gfx/dropshadow/03.gif" width=17 height=24 ></td>
+          <td background="../../gfx/dropshadow/05.gif"><img src="../../gfx/dropshadow/04.gif" width=11 height=11 ></td>
+          <td align="right" background="../../gfx/dropshadow/05.gif"><img src="../../gfx/dropshadow/07.gif" width=12 height=11 ></td>
+          <td rowspan="2"><img src="../../gfx/dropshadow/08.gif" width=17 height=24 ></td>
+          <td height="1"></td>
+        </tr>
+        <tr> 
+          <td colspan="2" rowspan="3" align="center">
+		  <table width="300" border="0" cellspacing="2" cellpadding="2">
+              <tr> 
+                <td colspan="2"><strong>Neue Seite  
+                erstellen</strong></td>
+                <td align="right" valign="top"><a href="javascript:hide('box_newPage')" onMouseOver="MM_swapImage('hide_new','','gfx/less_o.gif',1);" onMouseOut="MM_swapImgRestore();"><img src="gfx/less.gif" alt="Optionen ausblenden" name="newx1" border="0" id="hide_new"></a></td>
+              </tr>
+              <tr> 
+                <td width="50">Titel:</td>
+                <td width="172">
+					<input name="insert[title]" type="text" id="title" size="25">
+                  <input name="insert[parent]" type="hidden" value="{$data.id}">
+                  <input name="insert[table]" type="hidden" value="contents" />
+                  <input name="insert[type]" type="hidden" value="page"></td>
+                <td width="78" align="center">
+					<input type="image" src="../../gfx/save.gif" name="savenewx1" border="0" id="savenew">
+				</td>
+              </tr>
+            </table></td>
+          <td height="13"></td>
+        </tr>
+        <tr> 
+          <td background="../../gfx/dropshadow/12.gif">&nbsp;</td>
+          <td background="../../gfx/dropshadow/13.gif">&nbsp;</td>
+          <td height="70"></td>
+        </tr>
+        <tr> 
+          <td height="32" rowspan="2"><img src="../../gfx/dropshadow/16.gif" width=17 height=32 ></td>
+          <td height="32" rowspan="2"><img src="../../gfx/dropshadow/17.gif" width=17 height=32 ></td>
+          <td height="6"></td>
+        </tr>
+        <tr> 
+          <td background="../../gfx/dropshadow/19.gif"><img src="../../gfx/dropshadow/18.gif" width=11 height=26 ></td>
+          <td align="right" background="../../gfx/dropshadow/19.gif"><img src="../../gfx/dropshadow/20.gif" width=12 height=26 ></td>
+          <td height="26"></td>
+        </tr>
+      </table>
+    </div>
+  </form>
+
+  

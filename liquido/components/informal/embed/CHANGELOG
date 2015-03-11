@@ -1,0 +1,24 @@
+changelog
+---------
+0.7.0.1 (liquido embed)
+ * code clean-up in database class and config
+
+0.7.0
+ * under the hood:
+   + complete rewrite
+   + smarty template engine
+   + form preocessing via pear quickform
+   + basic theming
+   + class based page display
+   + database access through adodb_lite
+
+0.6.4
+ * changed submissions limit from 255 to 65535
+
+0.6.3
+ * links in admin submission lists for every field
+
+0.6.2
+ * go.php for simple db aliases
+ * mysql version 4.0/4.1 switch in config for sql skeleton
+ * bugfix for link in submission notification mail

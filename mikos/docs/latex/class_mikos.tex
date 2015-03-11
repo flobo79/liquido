@@ -1,0 +1,202 @@
+\hypertarget{class_mikos}{
+\section{Mikos Class Reference}
+\label{class_mikos}\index{Mikos@{Mikos}}
+}
+Inheritance diagram for Mikos:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_mikos_e653539dab7aa9260811a9743fe5bffd}{Mikos} (\$username= '', \$password= '')
+\item 
+\hyperlink{class_mikos_9882b0b15e6bd279d143069fed3e93be}{parseWsdlFunctions} ()
+\item 
+\hyperlink{class_mikos_a23685bf95bd7af11c0a0a2f6f1d2159}{call} (\$name, \$inputvars=array())
+\item 
+\hyperlink{class_mikos_539ff1a8891af79abcc16ed355982bef}{login} (\$username, \$password)
+\item 
+\hyperlink{class_mikos_19b0af84462a7a9acabffdc9d7894b2b}{logout} ()
+\item 
+\hyperlink{class_mikos_e37f254bc7fdba53a43813dbc792c314}{requireLogin} ()
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{class_mikos_b2c161f216ec3c7dbb6f839216498937}{
+\hyperlink{class_mikos_b2c161f216ec3c7dbb6f839216498937}{\$srv} = null}
+\label{class_mikos_b2c161f216ec3c7dbb6f839216498937}
+
+\item 
+\hypertarget{class_mikos_4a34dfb848a11678d24576cf66a2bce0}{
+\hyperlink{class_mikos_4a34dfb848a11678d24576cf66a2bce0}{\$sessionId} = ''}
+\label{class_mikos_4a34dfb848a11678d24576cf66a2bce0}
+
+\item 
+\hypertarget{class_mikos_96178fa3b375bc90c880320b96c2d488}{
+\hyperlink{class_mikos_96178fa3b375bc90c880320b96c2d488}{\$memberId} = 0}
+\label{class_mikos_96178fa3b375bc90c880320b96c2d488}
+
+\item 
+\hypertarget{class_mikos_68c6b39b0ce3997e1775e20fea5bc08f}{
+\hyperlink{class_mikos_68c6b39b0ce3997e1775e20fea5bc08f}{\$custInfo} = array()}
+\label{class_mikos_68c6b39b0ce3997e1775e20fea5bc08f}
+
+\item 
+\hypertarget{class_mikos_2e213b8a1845f268c7adf217dc4fe9e5}{
+\hyperlink{class_mikos_2e213b8a1845f268c7adf217dc4fe9e5}{\$functions} = array()}
+\label{class_mikos_2e213b8a1845f268c7adf217dc4fe9e5}
+
+\item 
+\hypertarget{class_mikos_1909fd7017ff23b5c832c540db814486}{
+\hyperlink{class_mikos_1909fd7017ff23b5c832c540db814486}{\$loggedIn} = false}
+\label{class_mikos_1909fd7017ff23b5c832c540db814486}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_mikos}{Mikos} Applikation
+
+\begin{Desc}
+\item[Author:]Henrik Westphal, $<$\href{mailto:hwestphal@nwmgbr.de}{\tt hwestphal@nwmgbr.de}$>$ Wrapper fuer den PEAR::SOAP Client
+
+Henrik Westphal, $<$\href{mailto:hwestphal@nwmgbr.de}{\tt hwestphal@nwmgbr.de}$>$ \hyperlink{class_mikos}{Mikos} Applikation\end{Desc}
+public \begin{Desc}
+\item[Author:]Henrik Westphal, $<$\href{mailto:hwestphal@nwmgbr.de}{\tt hwestphal@nwmgbr.de}$>$ \end{Desc}
+
+
+Definition at line 34 of file class.Mikos.php.
+
+\subsection{Member Function Documentation}
+\hypertarget{class_mikos_e653539dab7aa9260811a9743fe5bffd}{
+\index{Mikos@{Mikos}!Mikos@{Mikos}}
+\index{Mikos@{Mikos}!Mikos@{Mikos}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Mikos::Mikos (\$ {\em username} = {\tt ''}, \$ {\em password} = {\tt ''})}}
+\label{class_mikos_e653539dab7aa9260811a9743fe5bffd}
+
+
+Konstruktor der Klasse, erwartet Usernamen und Passwort als Parameter.
+
+public \begin{Desc}
+\item[Author:]Henrik Westphal, $<$\href{mailto:hwestphal@nwmgbr.de}{\tt hwestphal@nwmgbr.de}$>$ \end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\item[{\em string}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]void \end{Desc}
+
+
+Definition at line 100 of file class.Mikos.php.
+
+References login(), and parseWsdlFunctions().
+
+Referenced by KIS::KIS().
+
+Here is the call graph for this function:\hypertarget{class_mikos_9882b0b15e6bd279d143069fed3e93be}{
+\index{Mikos@{Mikos}!parseWsdlFunctions@{parseWsdlFunctions}}
+\index{parseWsdlFunctions@{parseWsdlFunctions}!Mikos@{Mikos}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Mikos::parseWsdlFunctions ()}}
+\label{class_mikos_9882b0b15e6bd279d143069fed3e93be}
+
+
+Short description of method parseWsdlFunctions
+
+public \begin{Desc}
+\item[Author:]Henrik Westphal, $<$\href{mailto:hwestphal@nwmgbr.de}{\tt hwestphal@nwmgbr.de}$>$ \end{Desc}
+\begin{Desc}
+\item[Returns:]void \end{Desc}
+
+
+Definition at line 123 of file class.Mikos.php.
+
+Referenced by Mikos().\hypertarget{class_mikos_a23685bf95bd7af11c0a0a2f6f1d2159}{
+\index{Mikos@{Mikos}!call@{call}}
+\index{call@{call}!Mikos@{Mikos}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Mikos::call (\$ {\em name}, \$ {\em inputvars} = {\tt array()})}}
+\label{class_mikos_a23685bf95bd7af11c0a0a2f6f1d2159}
+
+
+Diese Funktion ist ein Wrapper fuer die execFunction-Funktion der Hilft den sessionId-Parameter einzufuegen falls dieser nicht angegeben und prueft die Server-Antwort ob die sessionId noch gueltig ist.
+
+public \begin{Desc}
+\item[Author:]Henrik Westphal, $<$\href{mailto:hwestphal@nwmgbr.de}{\tt hwestphal@nwmgbr.de}$>$ \end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\item[{\em array}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]void \end{Desc}
+
+
+Definition at line 168 of file class.Mikos.php.
+
+References logout().
+
+Referenced by login().
+
+Here is the call graph for this function:\hypertarget{class_mikos_539ff1a8891af79abcc16ed355982bef}{
+\index{Mikos@{Mikos}!login@{login}}
+\index{login@{login}!Mikos@{Mikos}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Mikos::login (\$ {\em username}, \$ {\em password})}}
+\label{class_mikos_539ff1a8891af79abcc16ed355982bef}
+
+
+Meldet einen User am Server an.
+
+public \begin{Desc}
+\item[Author:]Henrik Westphal, $<$\href{mailto:hwestphal@nwmgbr.de}{\tt hwestphal@nwmgbr.de}$>$ \end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\item[{\em string}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Reimplemented in \hyperlink{class_k_i_s_46fbc5ab041178822e533227438a32ad}{KIS}.
+
+Definition at line 239 of file class.Mikos.php.
+
+References call().
+
+Referenced by Mikos().
+
+Here is the call graph for this function:\hypertarget{class_mikos_19b0af84462a7a9acabffdc9d7894b2b}{
+\index{Mikos@{Mikos}!logout@{logout}}
+\index{logout@{logout}!Mikos@{Mikos}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Mikos::logout ()}}
+\label{class_mikos_19b0af84462a7a9acabffdc9d7894b2b}
+
+
+Meldet einen User am Server ab (es wird nur die Session-ID geloescht).
+
+public \begin{Desc}
+\item[Author:]Henrik Westphal, $<$\href{mailto:hwestphal@nwmgbr.de}{\tt hwestphal@nwmgbr.de}$>$ \end{Desc}
+\begin{Desc}
+\item[Returns:]void \end{Desc}
+
+
+Definition at line 269 of file class.Mikos.php.
+
+Referenced by call().\hypertarget{class_mikos_e37f254bc7fdba53a43813dbc792c314}{
+\index{Mikos@{Mikos}!requireLogin@{requireLogin}}
+\index{requireLogin@{requireLogin}!Mikos@{Mikos}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Mikos::requireLogin ()}}
+\label{class_mikos_e37f254bc7fdba53a43813dbc792c314}
+
+
+Prueft \$this-$>$loggedIn, wenn false wird per Header-Redirect auf die verwiesen
+
+public \begin{Desc}
+\item[Author:]Henrik Westphal, $<$\href{mailto:hwestphal@nwmgbr.de}{\tt hwestphal@nwmgbr.de}$>$ \end{Desc}
+\begin{Desc}
+\item[Returns:]void \end{Desc}
+
+
+Definition at line 287 of file class.Mikos.php.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/Werkbank/Projekte/VW Club MIKOS neu/htdocs/soapclient/libs/class.Mikos.php\end{CompactItemize}

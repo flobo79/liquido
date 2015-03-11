@@ -1,0 +1,81 @@
+
+<link rel="stylesheet" type="text/css" media="all" href="/mikos/files/mtable.css" />
+<link rel="stylesheet" href="/mikos/libs/tablesort/themes/blue/style.css" type="text/css" media="print, projection, screen" />
+
+<script type="text/javascript">
+jQ(document).ready(function() {
+  jQ("#memberList")
+  .tablesorter({widthFixed: true, widgets: ['zebra'], headers: { 6: { sorter: false}}})
+  .tablesorterPager({container: jQuery("#pagination")})
+  .tablesorterFilter({filterContainer: "#filter-box",
+                      filterColumns: [0, 1, 2, 3, 4, 5],
+                      filterWaitTime: 150,
+                      filterClearContainer: "#filter-clear-button"});    
+});
+</script>
+
+Suche: <input name="filter" id="filter-box" value="" maxlength="30" size="30" type="text" class="inputclass" style="padding-top: 2px; height: 15px;"/>
+<input id="filter-clear-button" type="submit" value="l&ouml;schen" class="resetclass" style="font-weight: normal;"/>
+<!-- style="background-color:#EFEFEF; border:1px solid #CCCCCC; cursor:pointer; padding:1px;" -->
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" id="memberList" class="tablesorter {sortlist: [[0,0]]}">
+  <thead>
+  <tr>
+    <th class="tdata0 sortfirstdec" align="left" width="84">Mitgliedsnr.</th>
+	  <th class="tdata0" align="left" width="50">Anrede</th>
+	  <th class="tdata0" align="left">Vorname</th>
+	  <th class="tdata0" align="left">Nachname</th>
+	  <th class="tdata0" align="left" width="44">PLZ</th>
+	  <th class="tdata0" align="left" width="104">Ort</th>
+	  <th class="tdata0 nosort" align="left" width="40">&nbsp;</th>
+  </tr>
+  </thead>
+
+  <tbody>
+[{foreach key=wnr name=Members from=$myMemberList item=w}]
+  <tr bgcolor="[{cycle values='#ffffff,#e6e6eb'}]" id="row_[{$w->contractId}]">    
+    <td class="tdata1" align="left" id="[{$w->id}]_memberId">[{$w->memberId}]</td>
+    <td class="tdata1" align="left" id="[{$w->id}]_salutation">[{$w->salutation}]</td>
+    <td class="tdata1" align="left" id="[{$w->id}]_firstName">[{$w->firstName}]</td>
+    <td class="tdata1" align="left" id="[{$w->id}]_lastName">[{$w->surname|mb_convert_encoding:'UTF-8':'auto'}]</td>
+    <td class="tdata1" align="left" id="[{$w->id}]_zip">[{$w->zip}]</td>
+    <td class="tdata1" align="left" id="[{$w->id}]_city">[{$w->city}]</td>
+    <!--<td class="tdata1" align="left" id="[{$w->id}]_status">[{if ($w->showDetails == 1)}]ja[{else}]nein[{/if}]</td>-->
+    <td class="tdata1" align="left" id="detailsOf_[{$w->contractId}]"><div class="showMember" id="e[{$w->contractId}]"><img src="/liquido_container/9999/arrow_link.gif"/>Details</div></td>   
+  </tr>
+[{foreachelse}]
+  <tr>
+    <td class="tdata1" colspan="10">Keine Mitglieder gefunden. </td>
+  </tr>
+[{/foreach}]
+
+
+  </tbody>
+  
+</table>
+
+<div id="pagination" style="position: relative; margin-top: 10px; top: 0">
+	<form>
+	<div style="float: left;">
+	<table>
+	  <tr>
+      <td><img src="/mikos/libs/tablesort/addons/pager/icons/button_first.gif" class="first"/></td>
+	    <td width="20"><img src="/mikos/libs/tablesort/addons/pager/icons/button_prev.gif" class="prev"/></td>
+		  <td width="62">Seite <input type="text" class="pagedisplay" style="width:32px; border: 0"/></td>
+		  <td><img src="/mikos/libs/tablesort/addons/pager/icons/button_next.gif" class="next"/></td>
+		  <td><img src="/mikos/libs/tablesort/addons/pager/icons/button_last.gif" class="last"/></td>
+	  </tr>
+	</table>
+	</div>
+	<div style="float: right;">
+		Ergebnisse pro Seite: 
+		<select class="pagesize">
+			<option selected="selected"  value="10">10</option>
+			<option value="25">25</option>
+			<option value="50">50</option>
+			<option  value="100">100</option>
+		</select>
+	</div>
+	</form>
+</div>
+

@@ -1,0 +1,21 @@
+<noscript><div id="javascript_info">Bitte aktivieren Sie JavaScript in Ihrem Browser um diesen Bereich zu betreten.</div></noscript>
+<form id="mikos_partner_login" name="mikos_partner_login" method="post" action="/mikos/libs/ajax.php" onsubmit="return false;">
+<table border="0">
+<tr>
+  <td><label for="username">Benutzername:</label></td>
+  <td><input name="username" type="text" class="inputclass_p" id="username" value="" /></td>
+</tr>
+<tr>
+  <td><label for="password">Passwort:</label></td>
+  <td><input name="password" class="inputclass_p" type="password" id="password" value="" />
+  <input type="hidden" name="class" id="class" value="CPIS" /></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><input name="cpis_action" id="cpis_action" type="hidden" value="doLogin" />
+  <input type="button" name="submit" class="submit" id="submit_form" value="Login"/></td>
+</tr>
+</table><br />
+<div id="loader"></div>
+<div id="output" style="float:none"></div>
+</form>

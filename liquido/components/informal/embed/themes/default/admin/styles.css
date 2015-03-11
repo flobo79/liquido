@@ -1,0 +1,236 @@
+address
+{
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+body
+{
+    background: #EEEEEE;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    margin: 0px;
+}
+
+h2
+{
+    margin: 15px;
+    margin-bottom: 8px;
+}
+
+p, .formElement, .container
+{
+    background: #FFFFFF;
+    border-width: 1px;
+    border-color: #BBDDCC;
+    border-style: solid;
+    padding: 10px;
+    margin: 10px;
+    line-height: 150%;
+}
+
+ul
+{
+    padding-left: 20px;
+    margin: 3px;
+}
+
+table
+{
+    background: #CCCCCC;
+    border: 0px;
+    border-spacing: 1px;
+    font-size: 12px;
+}
+
+td
+{
+    background: #FFFFFF;
+    border: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    white-space: nowrap;
+}
+
+th
+{
+    background: #DDFFDD;
+    border: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.badFormField
+{
+    color: #FF0000;
+}
+
+.error
+{
+    border-color: #FF0000;
+}
+
+.message
+{
+    border-color: #FFFF00;
+}
+
+.inputText
+{
+    background: #DDFFCC;
+    border-color: #66CC00;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.linkBlind
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+a.linkBlind:hover
+{
+    text-decoration: underline;
+}
+
+.padding
+{
+    margin: 10px;
+
+}
+
+.pageHeader
+{
+    background: #66AACC;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 15px;
+}
+
+.submitButton
+{
+    background: #66AACC;
+    border-color: #66AACC;
+    border-style: outset;
+    border-width: 2px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+div.menu
+{
+    background: #FFF;
+    height: 1.35em;
+    margin: 0;
+    padding: .5em .4em;
+}
+
+div.menu .login-link
+{
+    float: right;
+}
+
+div.menu ul
+{
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+div.menu ul li
+{
+    display: inline;
+}
+
+div.menu ul li a, .button, .button-inactive, .button-smaller
+{
+    background: #66AACC;
+    border-color: #66AACC;
+    border-style: outset;
+    border-width: .1em;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: .15em;
+    padding: .15em .4em;
+    text-decoration: none;
+}
+
+.button-smaller
+{
+    font-size: 0.8em;
+}
+
+div.menu ul li a:hover, .button:hover
+{
+    background: #77BBDD;
+    border-color: #77BBDD;
+}
+
+.button-inactive
+{
+    background: #DDDDDD;
+    border-color: #DDDDDD;
+}
+
+.formElement .editor
+{
+    border-style: none;
+    background: none;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.formElement .editor .html
+{
+    background: #FFFFFF;
+    border-color: #AACCBB;
+    border-style: dashed;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.formElement .editor .buttons
+{
+    padding: 0px;
+    font-size: 0.8em;
+    vertical-align: top;
+}
+
+.details
+{
+    color: #999999;
+    font-size: 0.9em;
+    margin-left: 0.5em;
+}
+
+.editor-functions
+{
+    background: #DDDDFF;
+    padding: .15em 0 .25em .2em;
+}
+
+/* for form fields */
+.required
+{
+    color: #AAAAAA;
+    font-style: italic;
+    margin-left: 0.3em;
+}
+
+.field_error_message
+{
+    color: #F00;
+    font-weight: bold;
+}
+
+.form-element-description
+{
+    font-size: 0.8em;
+    line-height: 1.3em;
+    max-width: 50%;
+}

@@ -1,0 +1,144 @@
+address
+{
+	color: #555;
+	font-size: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+body
+{
+	background: #EEEEEE;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	margin: 0px;
+}
+
+h2
+{
+	margin: 15px;
+	margin-bottom: 8px;
+}
+
+p, .formElement, .error-box
+{
+	background: #FFFFFF;
+	padding: 15px 20px;
+ 	margin: 0px 0px 5px;
+	line-height: 150%;
+}
+
+ul
+{
+	padding-left: 20px;
+	margin: 3px;
+}
+
+table
+{
+	background: #CCCCCC;
+	border: 0px;
+	border-spacing: 1px;
+	font-size: 12px;
+}
+
+td
+{
+	background: #FFFFFF;
+	border: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+	white-space: nowrap;
+}
+
+th
+{
+	background: #DDFFDD;
+	border: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.badFormField
+{
+	color: #FF0000;
+}
+
+.error, .error-box
+{
+	border-width: 4px;
+	border-style: solid;
+	border-color: #E66;
+}
+
+.inputText
+{
+	background: #DDFFCC;
+	border-color: #66CC00;
+	border-style: inset;
+	border-width: 1px;
+}
+
+.padding
+{
+	margin: 10px;
+
+}
+
+.pageHeader
+{
+	background: #66CC00;
+	border-color: #33AA00;
+	border-style: solid;
+	border-width: 0 0 5px 0;
+	color: #FFFFFF;
+	margin: 0px;
+	padding: 18px 15px 12px 15px;
+}
+
+.submitButton
+{
+	background: #66CC00;
+	border-color: #66CC00;
+	border-style: outset;
+	border-width: 2px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.details
+{
+	color: #999999;
+	font-size: 0.9em;
+	margin-left: 0.5em;
+}
+
+/* for form fields */
+.required
+{
+	color: #AAAAAA;
+	font-style: italic;
+	margin-left: 0.3em;
+}
+
+.field_error_message
+{
+	color: #F00;
+	font-weight: bold;
+}
+
+.form-element-title
+{
+	margin: 0.2em 0
+}
+
+.form-element-description
+{
+	font-size: 0.8em;
+	line-height: 1.3em;
+	max-width: 50%;
+	margin: 0.3em 0
+}

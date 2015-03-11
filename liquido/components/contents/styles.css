@@ -1,0 +1,126 @@
+#left_pane {
+	position:absolute;
+	top:10px;
+	position:fixed;
+	left:0;
+}
+
+#left_pane {
+	position:absolute;
+	top:10px;
+	position:fixed;
+	right:0;
+}
+
+#topbox {
+	padding-left:40px;
+	background: #FFFFFF url('gfx/page.gif') no-repeat;
+	height:40px !important;
+	width:400px;
+	text-align:left;
+	margin: 3px auto;
+}
+
+#pagecontent {
+	text-align:center;
+}
+
+#contents {
+	text-align:left;
+	margin: 10px auto;
+}
+
+#topbox_publish {
+	background: #FFFFFF url('gfx/zahnrad.gif') no-repeat;
+	padding-left:40px;
+	cursor:pointer;
+	height:30px;
+	float:right;
+}
+#iconcolon {
+	background: #FFFFFF url(gfx/lightgrey_dot.gif) repeat-y;
+	margin-left:40px;
+	padding-bottom:20px;
+}
+#parents {
+	margin-top:15px;
+	clear:both;
+}
+
+#icon {
+	width:80px;
+	float:left;
+	text-align:center
+}
+
+#details {
+	margin: 20px 0 20px 40px;
+	width:590px;
+	text-align:left;
+}
+
+#childlist {
+	clear:both;
+	margin-left:40px;
+}
+
+.objecthead .sort {
+	background-image: url('../../gfx/row_bevel_bu_updown.png');
+	 cursor:pointer;
+	 height:14px;
+	 width:29px;
+	 float:right;
+	 margin:0;
+}
+.objecthead .delbutton {
+	 background-image: url('../../gfx/row_bevel_bu_del.png');
+	 cursor:pointer;
+	 height:14px;
+	 width:30px;
+	 float:right;
+	 margin:0;
+	 display:block;
+}
+.objecthead .bu_add {
+	 background-image: url('../../gfx/row_bevel_bu_plus.png');
+	 cursor:pointer;
+	 height:14px;
+	 width:29px;
+	 float:right;
+	 margin:0;
+}
+.objecthead {
+	height:14px;
+	line-height:14px;
+	font-size:10px;
+	background:#F8F8F8 url('../../gfx/row_bg_bevel.png');
+}
+
+.objbox {
+	float:left;
+	width:100%;
+}
+.compose .objbox:hover {
+	background-color:#EFEFEF;
+}
+.selected {
+	background-color:#EBEBEB;
+}
+.imgbox .delbutton {
+	background-image: url('../../gfx/del.png');
+	cursor:pointer;
+	height:17px;
+	width:17px;
+	margin-top:-20px;
+	position:absolute;
+	display:none;
+}
+
+body.compose .imbox img {
+	cursor:pointer;
+}
+.compose_imgbox img {
+	clear:both;
+cursor:pointer;
+display:block;
+}

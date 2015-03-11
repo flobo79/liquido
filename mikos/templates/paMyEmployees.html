@@ -1,0 +1,9 @@
+<div id="addEmployee" class="button" style="clear:both; margin-bottom:10px;[{if $custInfo->webStatus < 3}]display:none;[{/if}]">Mitarbeiter hinzufügen </div>
+
+<div id="myEmployees" style="clear:both;">
+[{include file='paMyEmployeesList.html' myEmployees=$myEmployees}]
+</div>
+
+[{include file="paMyEmployeeDetails.html"}]
+
+<script language="javascript"> mikos = 'myEmployees'; [{$jsObject}] </script>

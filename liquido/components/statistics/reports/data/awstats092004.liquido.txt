@@ -1,0 +1,397 @@
+AWSTATS DATA FILE 5.6 (build 1.533)
+# If you remove this file, all statistics for date 2004-09 will be lost/reset.
+
+# Position (offset in bytes) in this file of beginning of each section
+# for direct I/O access. If you made changes somewhere in this file, you
+# should also remove completely the MAP section (AWStats will rewrite it
+# at next update).
+BEGIN_MAP 26
+POS_GENERAL 1804                
+POS_TIME 2401                
+POS_VISITOR 2988                
+POS_DAY 6684                
+POS_DOMAIN 6841                
+POS_LOGIN 7007                
+POS_ROBOT 7141                
+POS_WORMS 7297                
+POS_EMAILSENDER 7428                
+POS_EMAILRECEIVER 7571                
+POS_SESSION 7647                
+POS_SIDER 7830                
+POS_FILETYPES 8788                
+POS_OS 8991                
+POS_BROWSER 9107                
+POS_SCREENSIZE 9248                
+POS_UNKNOWNREFERER 9322                
+POS_UNKNOWNREFERERBROWSER 9585                
+POS_ORIGIN 9760                
+POS_SEREFERRALS 9906                
+POS_PAGEREFS 10062               
+POS_SEARCHWORDS 11881               
+POS_MISC 2158                
+POS_KEYWORDS 12128               
+POS_ERRORS 12286               
+POS_SIDER_404 12410               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of old records - Nb of new records - Nb of corrupted - Nb of dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20040906100949 21277 3079730 46089534297
+FirstTime 20040906041626
+LastTime 20040906100949
+LastUpdate 20040906100948 21277 0 17982 3293 2
+TotalVisits 62                  
+TotalUnique 60                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 73                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 9
+FlashSupport 0 0 0
+RealPlayerSupport 0 0 0
+PDFSupport 0 0 0
+AddToFavourites 0 4 0
+TotalMisc 0 0 0
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+MediaPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth
+BEGIN_TIME 24
+0 0 0 0
+1 0 0 0
+2 0 0 0
+3 0 0 0
+4 123 931 10252436
+5 175 1529 17149997
+6 179 1502 14823510
+7 221 2435 20803779
+8 325 3002 28928952
+9 756 7286 71135720
+10 113 892 9221773
+11 0 0 0
+12 0 0 0
+13 0 0 0
+14 0 0 0
+15 0 0 0
+16 0 0 0
+17 0 0 0
+18 0 0 0
+19 0 0 0
+20 0 0 0
+21 0 0 0
+22 0 0 0
+23 0 0 0
+END_TIME
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start of last visit date] - [Last page of last visit]
+# [Start of last visit date] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 73
+145.253.208.99 951 951 5848341 20040906100721 20040906041626 /
+194.114.62.67 127 180 2115914 20040906093941 20040906084428 /
+127.0.0.1 111 111 590628 20040906100930 20040906082237 /
+194.114.62.37 107 311 3109439 20040906100739 20040906092252 /liquido/components/contents/body.php
+217.110.82.50 94 410 937874 20040906100941 20040906092703 /liquido/components/statistics/body.php
+212.144.4.188 41 133 373978 20040906100949 20040906080718 /
+212.144.4.187 35 72 327304 20040906094602 20040906075847 /
+213.157.2.94 33 258 1584620 20040906094729 20040906093850 /page.php
+84.128.253.246 28 189 1104465 20040906095111 20040906094628 /
+194.114.62.34 24 30 295184 20040906100557 20040906083553 /page.php
+80.145.148.72 5 184 986030 20040906095055 20040906095053 /page.php
+137.250.121.1 0 28 126416 
+217.244.204.99 5 71 135353 20040906090748
+219.93.8.15 5 61 136890 20040906064636
+212.144.4.179 4 17 89850 20040906091733 20040906091732 /
+80.120.224.107 5 68 137650 20040906095723 20040906095722 /page.php
+193.197.158.189 7 74 231885 20040906072525
+217.231.123.5 9 105 317786 20040906090859
+212.102.229.202 5 67 133275 20040906081548
+80.133.154.83 6 83 338401 20040906091405 20040906091312 /page.php
+217.247.208.54 7 81 222786 20040906081233
+195.93.60.78 1 1 1646 20040906091251 20040906091251 /
+62.225.183.250 3 25 52579 20040906074152
+80.136.226.31 12 285 789687 20040906072740
+217.237.151.173 0 23 24291 
+62.153.231.3 5 71 135073 20040906092726 20040906092726 /page.php
+84.128.61.193 14 94 381078 20040906091751 20040906091656 /
+212.68.65.139 0 10884 139562233 
+195.93.60.141 8 14 10393 20040906092121 20040906091015 /
+62.181.135.114 5 57 39773 20040906075227
+194.114.62.68 9 17 169189 20040906083621
+192.25.19.11 5 67 145713 20040906085150
+217.237.185.168 5 74 268502 20040906094513 20040906094512 /page.php
+200.56.152.180 1 1 25398 20040906064328
+212.118.201.132 7 82 310580 20040906072036
+217.237.151.168 1 19 23535 20040906095248 20040906095248 /
+194.114.62.38 18 26 248845 20040906091912 20040906090526 /
+138.232.85.34 5 56 132712 20040906084706
+200.52.170.4 0 13 77548 
+195.93.60.143 3 7 11306 20040906092121 20040906091018 /
+217.83.171.151 1 1 2737152 20040906092419 20040906092419 /liquido/games/lupo_cup.exe
+194.25.15.12 3 47 150731 20040906074146
+80.145.36.246 9 90 294125 20040906090000
+195.243.11.13 0 1 7474 
+195.12.150.248 5 67 145521 20040906050333
+217.237.151.172 4 21 46144 20040906095246 20040906095245 /page.php
+200.52.170.2 0 14 171691 
+217.5.231.249 1 1 476626 20040906070235
+4.16.126.23 5 48 122602 20040906062831
+195.93.60.136 4 4 73999 20040906092122 20040906091022 /page.php
+143.164.102.14 0 3 27798 
+213.239.193.66 0 76 693028 
+141.113.101.21 5 71 139432 20040906064215
+195.124.255.26 1 47 224951 20040906092756 20040906092756 /page.php
+217.229.196.187 24 693 2050151 20040906100753 20040906095231 /page.php
+195.82.72.9 9 66 29971 20040906093957 20040906093950 /page.php
+62.8.156.170 8 112 164687 20040906091603 20040906091544 /page.php
+217.245.214.53 5 81 138813 20040906075831
+217.237.151.169 0 8 47023 
+217.235.132.139 7 65 185532 20040906074807
+213.7.172.209 15 95 465674 20040906082704
+195.30.145.126 14 139 841556 20040906095736 20040906095731 /page.php
+195.145.180.106 12 93 295735 20040906083435
+217.94.171.59 5 74 136596 20040906072852
+212.23.140.227 10 82 223898 20040906092908 20040906092732 /page.php
+137.250.204.8 0 10 59545 
+62.180.128.11 0 1 2281 
+195.93.60.145 0 2 0 
+213.23.134.115 17 75 237597 20040906100058 20040906092939 /liquido/head.php
+200.52.170.5 0 21 50179 
+213.54.100.205 5 67 139062 20040906074431
+139.18.61.72 1 1 1658 20040906084817
+145.254.94.86 11 101 380785 20040906084350
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 1
+20040906 1892 17577 172316167 62
+END_DAY
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 1892 17577 172316167
+END_DOMAIN
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 1
+googlebot 44 433032 20040906095933
+END_ROBOT
+
+# Worm ID - Hits - Last visit
+# The 10 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Session range - Number of visits
+BEGIN_SESSION 5
+1h+ 1
+30s-2mn 7
+30mn-1h 1
+2mn-5mn 3
+0s-30s 18
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 18
+/ 1195 2824825 55 6
+/page.php 432 7721579 4 23
+/liquido/components/contents/body.php 71 3144723 0 0
+/liquido/components/contents/left_pane.php 49 437907 0 0
+/liquido/head.php 42 125583 0 0
+/liquido/body.php 27 61078 0 0
+/liquido/components/contents/right.php 23 32056 0 0
+/liquido/components/statistics/left_pane.php 18 49172 0 0
+/liquido/login.php 8 14032 0 0
+/liquido/ 7 3318 1 0
+/liquido/components/statistics/body.php 6 30 0 0
+/liquido/components/statistics/contentstats/ 4 104108 0 0
+/liquido/games/lupo_cup.exe 1 2737152 1 0
+/liquido/components/statistics/kis/awstats.kis.html 1 61008 0 0
+/liquido/download/PDF_Deutschland.pdf 1 476626 1 1
+/liquido/components/statistics/cpis/awstats.cpis.html 2 122050 0 0
+/liquido/components/statistics/sysinfo/ 3 62247 0 0
+/liquido/components/statistics/reports/awstats.liquido.html 2 122910 0 0
+END_SIDER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 8
+pdf 1 476626 0 0
+php 1885 14580658 0 0
+png 56 16385 0 0
+jpg 11985 152411626 0 0
+html 5 305968 0 0
+css 78 213339 0 0
+exe 1 2737152 0 0
+gif 3566 1574413 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 7
+win16 66
+Unknown 11189
+winxp 3091
+winme 49
+winnt 1434
+win98 305
+win2000 1443
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 7
+msie6.0 4643
+Unknown 11072
+msie5.0 948
+netscape7.1 71
+msie5.01 108
+msie5.5 536
+mozilla 199
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 6
+Java/1.4.2_03 20040906100930
+FavOrg 20040906084817
+Mozilla/3.01_(compatible;) 20040906093526
+Mozilla/4.0_(compatible;) 20040906095245
+- 20040906100753
+PHP/4.2.2 20040906074153
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 4
+Java/1.4.2_03 20040906100930
+FavOrg 20040906084817
+- 20040906100753
+PHP/4.2.2 20040906074153
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 227 11838
+From1 0 0
+From2 6 6
+From3 152 758
+From4 1507 4975
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google. 6 6
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 32
+http://vw-club.de/liquido/body.php 44 112
+http://vw-club.de/index.php 29 74
+http://vw-club.de/liquido/ 29 29
+http://www.vwclub.de 8 8
+http://www.vwclub.de/index.php 8 70
+http://www.volkswagen.de/home/index2.htm 5 5
+http://vw-club.de/liquido/head.php 4 44
+http://vww.wob.vw.de/kommunikation_publish/vww/www/de/internet.html 4 4
+http://vw-club.de/liquido/login.php 4 16
+http://www.saskia.amateurs2000.de/seite4.htm 3 3
+http://www.vwclub.de/page.php 0 179
+http://www.injoy.de 1 1
+http://www.amwmag.com/V/VW_World/hauptteil_vw_world.html 1 1
+http://vw-club.de/liquido/components/statistics/left_pane.php 0 14
+http://www.nachtzugreise.de/DBautozug/angebote_detail/angebot_vwclub.html 1 1
+http://vww.wob.vw.vwg/kommunikation_publish/vww/www/de/internet.html 1 1
+http://vw-club.de/liquido/components/statistics/sysinfo/index.php 0 28
+http://vw-club.de/liquido/components/statistics/cpis/awstats.cpis.html 0 1
+http://vw-club.de 2 2
+http://vw-club.de/liquido/components/contents/body.php 0 27
+http://www.vw-service.de/right.htm 1 1
+http://www.soft-ware.net/spiele/sport/download.asp 1 1
+http://www.vw-club.com/page.php 0 38
+http://hot-server/content/de/externe_links/index.htm 1 1
+http://vw-club.de/liquido/components/statistics/kis/awstats.kis.html 0 13
+http://www.autohaus-weeber.de/daten/vw_vorfuehrwagen.htm 1 1
+http://www.vw-service.de/service/longlife_details.htm 1 1
+http://mobileservices.volkswagen.de/0_mobilizer/f_haendler/f2_volkswagen_club/ 1 1
+http://www.vw-service.de/rat/right.htm 1 1
+http://vw-club.de/liquido/components/statistics/reports/awstats.liquido.html 0 29
+http://vw-club.de/page.php 1 38
+http://vw-club.de/liquido/components/contents/left_pane.php 0 13
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 4
+vw+club 3
+volkswagen+safari 1
+holiday+inn+garden+court+unterhaching 1
+reisen+volkswagen+bank 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 11
+club 3
+vw 3
+volkswagen 2
+holiday 1
+court 1
+unterhaching 1
+garden 1
+inn 1
+reisen 1
+bank 1
+safari 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+302 19 182412
+206 2 580
+301 6 1852
+404 330 91195
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 9
+/liquido/bilder/2144/1227/thumbnail.jpg 1 -
+/<xcontainer>5x5rose.gif 3 http://www.vw-club.de/liquido/components/contents/body.php
+/liquido/components/contents/liquido/container/9999/7x7orang.gif 3 http://www.vw-club.de/liquido/components/contents/body.php
+/partnerclub-partner 1 -
+/liquido/bilder/1900/1236/small.jpg 2 -
+/_vti_bin/owssvr.dll 1 -
+/MSOffice/cltreq.asp 1 -
+/liquido/bilder/1900/1236/thumbnail.jpg 3 http://www.vw-club.com/page.php
+/css/vw_c.css 315 http://vw-club.de/index.php
+END_SIDER_404

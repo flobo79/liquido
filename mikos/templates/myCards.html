@@ -1,0 +1,26 @@
+<div id="content">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+  <td class="tdata0"><div align="left">Kartennummer</div></td>
+  <td class="tdata0"><div align="left">ausgestellt auf</div></td>
+  <td class="tdata0"><div align="left">Typ</div></td>
+  <td class="tdata0"><div align="right">gültig bis</div></td>
+  </tr>
+
+[{foreach key=cnr name=Cards from=$cards item=c}]
+  [{if $c->isValid && !$c->isBlocked }]
+  <tr bgcolor="[{cycle values="#ffffff,#e6e6eb"}]">
+    <td class="tdata1"><div align="left">[{$c->cardNrTxt}]</div></td>
+    <td class="tdata1"><div align="left">[{$c->ownerTxt}]</div></td>
+    <td class="tdata1"><div align="left">[{$c->cardType}]</div></td>
+    <td class="tdata1"><div align="right">[{$c->validTo}]</div></td>
+  </tr>
+  [{/if}]
+[{foreachelse}]
+
+  <tr>
+    <td class="tdata1" colspan="4">Keine Karten vorhanden. </td>
+  </tr>
+[{/foreach}]
+</table>
+</div>

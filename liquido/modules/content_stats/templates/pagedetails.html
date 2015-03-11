@@ -1,0 +1,15 @@
+{$statslabel}
+<table width="291" border="0" class="statstable">
+  <tr>
+    <td>&nbsp;</td>
+    <td>Views</td>
+    <td>Visits</td>
+  </tr>
+  {foreach from=$statsdata item="stat"}
+  <tr class="row{cycle values="1,2"}">
+    <td width="91">{$stat.id}{$stat.text|escape:"htmlall"}</td>
+    <td width="89">{$stat.views}</td>
+    <td width="89">{$stat.visits}</td>
+  </tr>
+  {/foreach}
+</table>

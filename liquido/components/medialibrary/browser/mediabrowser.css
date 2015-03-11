@@ -1,0 +1,57 @@
+#bu_modal_close {
+background:transparent url(/liquido/gfx/del.png) repeat scroll 0 0;
+cursor:pointer;
+height:17px;
+position:absolute;
+right:2px;
+top:2px;
+width:17px;
+z-index:9999;
+}
+
+div#bu_select.bu_select {
+	border:1px solid #DDD;
+	padding:4px;
+	background:#CCC;
+}
+div#bu_select.bu_select:hover {
+background:#EFEFEF;
+}
+#window_content {
+	height:200px;
+	overflow:auto;
+	position:absolute;
+	width:600px;
+	z-index:200;
+	text-align:left;
+}
+
+#window_content .list {
+	border-right:1px solid #CCC;
+	height:100%;
+	position:absolute;
+}
+#window_content .list div {
+	border-bottom:1px solid #EFEFEF;
+	padding:3px;
+	cursor:pointer;	
+}
+#window_content .list div:hover {
+	background-color:#F8F8F8;
+}
+#window_content .list.folder {
+	width:200px;
+	overflow:auto;
+}
+#window_content .details_picture {
+	width:400px;
+	padding:5px;
+	overflow:auto;
+}
+#window_content .details_picture img {
+	float:left;
+}
+#window_content .details_picture .meta {
+	float:left;
+	margin-left:10px;
+}

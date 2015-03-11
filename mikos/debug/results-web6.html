@@ -1,0 +1,784 @@
+
+<h1>28.03.2008 12:48:46 - loginDealer</h1><pre><h2>__getLastRequest()</h2>string(286) "<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://util.ws.club.casaconsult.de/jaws"><SOAP-ENV:Body><ns1:loginDealer><partnerBnr>76953</partnerBnr></ns1:loginDealer></SOAP-ENV:Body></SOAP-ENV:Envelope>
+"
+<h2>__getLastResponse()</h2>string(281) "<env:Envelope xmlns:env='http://schemas.xmlsoap.org/soap/envelope/'><env:Header></env:Header><env:Body><ns2:loginDealerResponse xmlns:ns2="http://util.ws.club.casaconsult.de/jaws"><return>H25yT33ZJwVdGKw060p948JSI4bK73x0</return></ns2:loginDealerResponse></env:Body></env:Envelope>"
+<h3>Input:</h3>array(1) {
+  ["partnerBnr"]=>
+  string(5) "76953"
+}
+<h3>Result:</h3>object(stdClass)#10 (1) {
+  ["return"]=>
+  string(32) "H25yT33ZJwVdGKw060p948JSI4bK73x0"
+}
+</pre><hr>stdClass Object
+(
+    [return] => H25yT33ZJwVdGKw060p948JSI4bK73x0
+)
+<h1>28.03.2008 12:48:46 - getPartnerById</h1><pre><h2>__getLastRequest()</h2>string(332) "<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://util.ws.club.casaconsult.de/jaws"><SOAP-ENV:Body><ns1:getPartnerById><sessionId>H25yT33ZJwVdGKw060p948JSI4bK73x0</sessionId><id>500018</id></ns1:getPartnerById></SOAP-ENV:Body></SOAP-ENV:Envelope>
+"
+<h2>__getLastResponse()</h2>string(1802) "<env:Envelope xmlns:env='http://schemas.xmlsoap.org/soap/envelope/'><env:Header></env:Header><env:Body><ns2:getPartnerByIdResponse xmlns:ns2="http://util.ws.club.casaconsult.de/jaws"><return><cancelDt></cancelDt><city>Dermbach</city><countryName>Deutschland</countryName><editDt>28.03.2008</editDt><email>bosselmann@gmail.com</email><fax>036964 / 77714123456</fax><houseNumber>1</houseNumber><id>500018</id><inheritDt></inheritDt><inheritFinishDt></inheritFinishDt><insertDt>03.02.1995</insertDt><isActive>true</isActive><isCanceled>false</isCanceled><isDtaBlock>false</isDtaBlock><isInherited>false</isInherited><isInheritedFinish>false</isInheritedFinish><isInvoiceBlock>false</isInvoiceBlock><isMarkContract1>true</isMarkContract1><isMarkContract2>true</isMarkContract2><isMarkContract3>false</isMarkContract3><isMarketingBlock>false</isMarketingBlock><isValid>true</isValid><mandantId>-1</mandantId><markContract1From></markContract1From><markContract1Status>HS</markContract1Status><markContract1To></markContract1To><markContract2From></markContract2From><markContract2Status>WVB</markContract2Status><markContract2To></markContract2To><markContract3From></markContract3From><markContract3To></markContract3To><marketingBlockDt></marketingBlockDt><name>Autohaus August WÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¤chtersbach</name><nameAdd1>GmbH &amp; Co. KG</nameAdd1><partnerBvz1>146</partnerBvz1><partnerBvz2>146</partnerBvz2><partnerRegion>188</partnerRegion><partnerRegion1>188</partnerRegion1><partnerRegion2>188</partnerRegion2><partnerVz>150</partnerVz><partnerVz2>150</partnerVz2><street>Untere Roede</street><telephone>1234567</telephone><webSite>http://www.wittenfÃ¶rden.de</webSite><zip>36466</zip></return></ns2:getPartnerByIdResponse></env:Body></env:Envelope>"
+<h3>Input:</h3>array(2) {
+  ["sessionId"]=>
+  string(32) "H25yT33ZJwVdGKw060p948JSI4bK73x0"
+  ["id"]=>
+  string(6) "500018"
+}
+<h3>Result:</h3>object(stdClass)#10 (1) {
+  ["return"]=>
+  object(stdClass)#31 (45) {
+    ["cancelDt"]=>
+    string(0) ""
+    ["city"]=>
+    string(8) "Dermbach"
+    ["countryName"]=>
+    string(11) "Deutschland"
+    ["editDt"]=>
+    string(10) "28.03.2008"
+    ["email"]=>
+    string(20) "bosselmann@gmail.com"
+    ["fax"]=>
+    string(20) "036964 / 77714123456"
+    ["houseNumber"]=>
+    int(1)
+    ["id"]=>
+    int(500018)
+    ["inheritDt"]=>
+    string(0) ""
+    ["inheritFinishDt"]=>
+    string(0) ""
+    ["insertDt"]=>
+    string(10) "03.02.1995"
+    ["isActive"]=>
+    bool(true)
+    ["isCanceled"]=>
+    bool(false)
+    ["isDtaBlock"]=>
+    bool(false)
+    ["isInherited"]=>
+    bool(false)
+    ["isInheritedFinish"]=>
+    bool(false)
+    ["isInvoiceBlock"]=>
+    bool(false)
+    ["isMarkContract1"]=>
+    bool(true)
+    ["isMarkContract2"]=>
+    bool(true)
+    ["isMarkContract3"]=>
+    bool(false)
+    ["isMarketingBlock"]=>
+    bool(false)
+    ["isValid"]=>
+    bool(true)
+    ["mandantId"]=>
+    int(-1)
+    ["markContract1From"]=>
+    string(0) ""
+    ["markContract1Status"]=>
+    string(2) "HS"
+    ["markContract1To"]=>
+    string(0) ""
+    ["markContract2From"]=>
+    string(0) ""
+    ["markContract2Status"]=>
+    string(3) "WVB"
+    ["markContract2To"]=>
+    string(0) ""
+    ["markContract3From"]=>
+    string(0) ""
+    ["markContract3To"]=>
+    string(0) ""
+    ["marketingBlockDt"]=>
+    string(0) ""
+    ["name"]=>
+    string(91) "Autohaus August WÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¤chtersbach"
+    ["nameAdd1"]=>
+    string(13) "GmbH & Co. KG"
+    ["partnerBvz1"]=>
+    string(3) "146"
+    ["partnerBvz2"]=>
+    string(3) "146"
+    ["partnerRegion"]=>
+    int(188)
+    ["partnerRegion1"]=>
+    string(3) "188"
+    ["partnerRegion2"]=>
+    string(3) "188"
+    ["partnerVz"]=>
+    string(3) "150"
+    ["partnerVz2"]=>
+    string(3) "150"
+    ["street"]=>
+    string(12) "Untere Roede"
+    ["telephone"]=>
+    string(7) "1234567"
+    ["webSite"]=>
+    string(29) "http://www.wittenfÃ¶rden.de"
+    ["zip"]=>
+    string(5) "36466"
+  }
+}
+</pre><hr>stdClass Object
+(
+    [return] => stdClass Object
+        (
+            [cancelDt] => 
+            [city] => Dermbach
+            [countryName] => Deutschland
+            [editDt] => 28.03.2008
+            [email] => bosselmann@gmail.com
+            [fax] => 036964 / 77714123456
+            [houseNumber] => 1
+            [id] => 500018
+            [inheritDt] => 
+            [inheritFinishDt] => 
+            [insertDt] => 03.02.1995
+            [isActive] => 1
+            [isCanceled] => 
+            [isDtaBlock] => 
+            [isInherited] => 
+            [isInheritedFinish] => 
+            [isInvoiceBlock] => 
+            [isMarkContract1] => 1
+            [isMarkContract2] => 1
+            [isMarkContract3] => 
+            [isMarketingBlock] => 
+            [isValid] => 1
+            [mandantId] => -1
+            [markContract1From] => 
+            [markContract1Status] => HS
+            [markContract1To] => 
+            [markContract2From] => 
+            [markContract2Status] => WVB
+            [markContract2To] => 
+            [markContract3From] => 
+            [markContract3To] => 
+            [marketingBlockDt] => 
+            [name] => Autohaus August WÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¤chtersbach
+            [nameAdd1] => GmbH & Co. KG
+            [partnerBvz1] => 146
+            [partnerBvz2] => 146
+            [partnerRegion] => 188
+            [partnerRegion1] => 188
+            [partnerRegion2] => 188
+            [partnerVz] => 150
+            [partnerVz2] => 150
+            [street] => Untere Roede
+            [telephone] => 1234567
+            [webSite] => http://www.wittenfÃ¶rden.de
+            [zip] => 36466
+        )
+
+)
+<h1>28.03.2008 12:48:47 - getPaPersonListByPartner</h1><pre><h2>__getLastRequest()</h2>string(366) "<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://util.ws.club.casaconsult.de/jaws"><SOAP-ENV:Body><ns1:getPaPersonListByPartner><partnerId>500018</partnerId><sessionId>H25yT33ZJwVdGKw060p948JSI4bK73x0</sessionId></ns1:getPaPersonListByPartner></SOAP-ENV:Body></SOAP-ENV:Envelope>
+"
+<h2>__getLastResponse()</h2>string(4628) "<env:Envelope xmlns:env='http://schemas.xmlsoap.org/soap/envelope/'><env:Header></env:Header><env:Body><ns2:getPaPersonListByPartnerResponse xmlns:ns2="http://util.ws.club.casaconsult.de/jaws"><return><firstname>Admin</firstname><gender>true</gender><id>171951231</id><partnerId>500018</partnerId><positionTitle>ET-Personal</positionTitle><salutation>Herr</salutation><surname>Administrator</surname><next><email>Waechtersbach@t-online.de</email><fax>036964 - 777-14</fax><firstname>Guido</firstname><gender>true</gender><id>141473349</id><partnerId>500018</partnerId><pasttitle>KP-L</pasttitle><phone>036964 - 777-0</phone><positionTitle>GeschÃÂÃÂ¤ftsfÃÂÃÂ¼hrer</positionTitle><salutation>Herr</salutation><surname>WÃ¤chtersbach</surname><next><email>bosselmann@gmail.com</email><firstname>Florian</firstname><gender>true</gender><id>209790476</id><partnerId>500018</partnerId><phone>23423423</phone><surname>Bosselmann</surname><next><email>bosselmann@gmail.com</email><firstname>BÃ¤rbel</firstname><gender>false</gender><id>209790484</id><partnerId>500018</partnerId><phone>234234</phone><surname>SchÃ¤fer</surname><next><email>ruediger.lang@consileon.de</email><firstname>Fritz</firstname><fronttitle>Dr</fronttitle><gender>false</gender><id>209790472</id><mobile>sfsdf</mobile><partnerId>500018</partnerId><pasttitle>Chef-Bearbeiter</pasttitle><phone>234234</phone><surname>MÃ¼ler Werner</surname><next><email>ras12@gmx.nez</email><firstname>Peter</firstname><gender>false</gender><id>209790480</id><partnerId>500018</partnerId><pasttitle>test</pasttitle><phone>1234</phone><surname>MÃ¼ller</surname><next><email>bosselmann@gmail.com</email><firstname>Florian</firstname><gender>false</gender><id>209790482</id><partnerId>500018</partnerId><phone>234234234</phone><surname>Bosselmann</surname><next><email>ruediger.lang@consileon.de</email><fax>876876</fax><firstname>Test</firstname><fronttitle>test</fronttitle><gender>true</gender><id>209790486</id><mobile>8060867</mobile><partnerId>500018</partnerId><pasttitle>kh</pasttitle><phone>09686</phone><surname>kj</surname><next><email>k.knopp@autolab.de</email><firstname>Karl</firstname><gender>false</gender><id>209790466</id><partnerId>500018</partnerId><phone>0800-AUTOLAB</phone><surname>Knopp</surname><next><email>d.mueller@ah-august.de</email><firstname>Dieter</firstname><gender>true</gender><id>209790460</id><partnerId>500018</partnerId><phone>328012</phone><surname>MÃ¼ler</surname><next><email>marcel.kuester@mail.com</email><firstname>Marcel</firstname><gender>true</gender><id>209790462</id><partnerId>500018</partnerId><phone>32123</phone><surname>KÃ¼ster</surname><next><email>m.reisch@missionmedia.de</email><firstname>Manfred</firstname><gender>true</gender><id>209790458</id><partnerId>500018</partnerId><phone>089-12345</phone><surname>Muster</surname><next><email>bosselmann@gmail.com</email><firstname>Florian</firstname><gender>true</gender><id>209790464</id><partnerId>500018</partnerId><phone>036964 - 777-0</phone><surname>MÃ¼ller</surname><next><email>ruediger.lang@consileon.de</email><fax>asd324324</fax><firstname>Fritz</firstname><fronttitle>Dr</fronttitle><gender>false</gender><id>209790470</id><mobile>sfsdf</mobile><partnerId>500018</partnerId><pasttitle>Chef-Bearbeiter</pasttitle><phone>dsg444</phone><surname>MÃ¼ller Werner</surname><next><email>ruediger.lang@consileon.de</email><fax>03234</fax><firstname>VTest1</firstname><fronttitle>Dr</fronttitle><gender>true</gender><id>209790474</id><mobile>034534</mobile><partnerId>500018</partnerId><pasttitle>Mitarbeiter</pasttitle><phone>023432</phone><surname>NTest2</surname><next><email>ruediger.lang@volkswagen.de</email><firstname>c</firstname><gender>false</gender><id>209790488</id><partnerId>500018</partnerId><pasttitle>c</pasttitle><phone>1</phone><surname>c</surname><next><email>o.boleck@oleck.pl</email><firstname>Oleck</firstname><gender>true</gender><id>209790468</id><partnerId>500018</partnerId><phone>01379-12231324</phone><surname>Boleck</surname><next><email>m.mueller@ah-w.de</email><firstname>Martina</firstname><gender>false</gender><id>209790490</id><partnerId>500018</partnerId><phone>05361 15897</phone><surname>MÃ¼ller</surname><next><email>bosselmann@gmail.com</email><firstname>Florian</firstname><gender>false</gender><id>209790478</id><partnerId>500018</partnerId><phone>23423423</phone><surname>Bosselmann</surname></next></next></next></next></next></next></next></next></next></next></next></next></next></next></next></next></next></next></return></ns2:getPaPersonListByPartnerResponse></env:Body></env:Envelope>"
+<h3>Input:</h3>array(2) {
+  ["partnerId"]=>
+  string(6) "500018"
+  ["sessionId"]=>
+  string(32) "H25yT33ZJwVdGKw060p948JSI4bK73x0"
+}
+<h3>Result:</h3>object(stdClass)#10 (1) {
+  ["return"]=>
+  object(stdClass)#32 (8) {
+    ["firstname"]=>
+    string(5) "Admin"
+    ["gender"]=>
+    bool(true)
+    ["id"]=>
+    int(171951231)
+    ["partnerId"]=>
+    int(500018)
+    ["positionTitle"]=>
+    string(11) "ET-Personal"
+    ["salutation"]=>
+    string(4) "Herr"
+    ["surname"]=>
+    string(13) "Administrator"
+    ["next"]=>
+    object(stdClass)#33 (12) {
+      ["email"]=>
+      string(25) "Waechtersbach@t-online.de"
+      ["fax"]=>
+      string(15) "036964 - 777-14"
+      ["firstname"]=>
+      string(5) "Guido"
+      ["gender"]=>
+      bool(true)
+      ["id"]=>
+      int(141473349)
+      ["partnerId"]=>
+      int(500018)
+      ["pasttitle"]=>
+      string(4) "KP-L"
+      ["phone"]=>
+      string(14) "036964 - 777-0"
+      ["positionTitle"]=>
+      string(45) "GeschÃÂÃÂ¤ftsfÃÂÃÂ¼hrer"
+      ["salutation"]=>
+      string(4) "Herr"
+      ["surname"]=>
+      string(15) "WÃ¤chtersbach"
+      ["next"]=>
+      object(stdClass)#34 (8) {
+        ["email"]=>
+        string(20) "bosselmann@gmail.com"
+        ["firstname"]=>
+        string(7) "Florian"
+        ["gender"]=>
+        bool(true)
+        ["id"]=>
+        int(209790476)
+        ["partnerId"]=>
+        int(500018)
+        ["phone"]=>
+        string(8) "23423423"
+        ["surname"]=>
+        string(10) "Bosselmann"
+        ["next"]=>
+        object(stdClass)#35 (8) {
+          ["email"]=>
+          string(20) "bosselmann@gmail.com"
+          ["firstname"]=>
+          string(9) "BÃ¤rbel"
+          ["gender"]=>
+          bool(false)
+          ["id"]=>
+          int(209790484)
+          ["partnerId"]=>
+          int(500018)
+          ["phone"]=>
+          string(6) "234234"
+          ["surname"]=>
+          string(10) "SchÃ¤fer"
+          ["next"]=>
+          object(stdClass)#36 (11) {
+            ["email"]=>
+            string(26) "ruediger.lang@consileon.de"
+            ["firstname"]=>
+            string(5) "Fritz"
+            ["fronttitle"]=>
+            string(2) "Dr"
+            ["gender"]=>
+            bool(false)
+            ["id"]=>
+            int(209790472)
+            ["mobile"]=>
+            string(5) "sfsdf"
+            ["partnerId"]=>
+            int(500018)
+            ["pasttitle"]=>
+            string(15) "Chef-Bearbeiter"
+            ["phone"]=>
+            string(6) "234234"
+            ["surname"]=>
+            string(15) "MÃ¼ler Werner"
+            ["next"]=>
+            object(stdClass)#37 (9) {
+              ["email"]=>
+              string(13) "ras12@gmx.nez"
+              ["firstname"]=>
+              string(5) "Peter"
+              ["gender"]=>
+              bool(false)
+              ["id"]=>
+              int(209790480)
+              ["partnerId"]=>
+              int(500018)
+              ["pasttitle"]=>
+              string(4) "test"
+              ["phone"]=>
+              string(4) "1234"
+              ["surname"]=>
+              string(9) "MÃ¼ller"
+              ["next"]=>
+              object(stdClass)#38 (8) {
+                ["email"]=>
+                string(20) "bosselmann@gmail.com"
+                ["firstname"]=>
+                string(7) "Florian"
+                ["gender"]=>
+                bool(false)
+                ["id"]=>
+                int(209790482)
+                ["partnerId"]=>
+                int(500018)
+                ["phone"]=>
+                string(9) "234234234"
+                ["surname"]=>
+                string(10) "Bosselmann"
+                ["next"]=>
+                object(stdClass)#39 (12) {
+                  ["email"]=>
+                  string(26) "ruediger.lang@consileon.de"
+                  ["fax"]=>
+                  string(6) "876876"
+                  ["firstname"]=>
+                  string(4) "Test"
+                  ["fronttitle"]=>
+                  string(4) "test"
+                  ["gender"]=>
+                  bool(true)
+                  ["id"]=>
+                  int(209790486)
+                  ["mobile"]=>
+                  string(7) "8060867"
+                  ["partnerId"]=>
+                  int(500018)
+                  ["pasttitle"]=>
+                  string(2) "kh"
+                  ["phone"]=>
+                  string(5) "09686"
+                  ["surname"]=>
+                  string(2) "kj"
+                  ["next"]=>
+                  object(stdClass)#40 (8) {
+                    ["email"]=>
+                    string(18) "k.knopp@autolab.de"
+                    ["firstname"]=>
+                    string(4) "Karl"
+                    ["gender"]=>
+                    bool(false)
+                    ["id"]=>
+                    int(209790466)
+                    ["partnerId"]=>
+                    int(500018)
+                    ["phone"]=>
+                    string(12) "0800-AUTOLAB"
+                    ["surname"]=>
+                    string(5) "Knopp"
+                    ["next"]=>
+                    object(stdClass)#41 (8) {
+                      ["email"]=>
+                      string(22) "d.mueller@ah-august.de"
+                      ["firstname"]=>
+                      string(6) "Dieter"
+                      ["gender"]=>
+                      bool(true)
+                      ["id"]=>
+                      int(209790460)
+                      ["partnerId"]=>
+                      int(500018)
+                      ["phone"]=>
+                      string(6) "328012"
+                      ["surname"]=>
+                      string(8) "MÃ¼ler"
+                      ["next"]=>
+                      object(stdClass)#42 (8) {
+                        ["email"]=>
+                        string(23) "marcel.kuester@mail.com"
+                        ["firstname"]=>
+                        string(6) "Marcel"
+                        ["gender"]=>
+                        bool(true)
+                        ["id"]=>
+                        int(209790462)
+                        ["partnerId"]=>
+                        int(500018)
+                        ["phone"]=>
+                        string(5) "32123"
+                        ["surname"]=>
+                        string(9) "KÃ¼ster"
+                        ["next"]=>
+                        object(stdClass)#43 (8) {
+                          ["email"]=>
+                          string(24) "m.reisch@missionmedia.de"
+                          ["firstname"]=>
+                          string(7) "Manfred"
+                          ["gender"]=>
+                          bool(true)
+                          ["id"]=>
+                          int(209790458)
+                          ["partnerId"]=>
+                          int(500018)
+                          ["phone"]=>
+                          string(9) "089-12345"
+                          ["surname"]=>
+                          string(6) "Muster"
+                          ["next"]=>
+                          object(stdClass)#44 (8) {
+                            ["email"]=>
+                            string(20) "bosselmann@gmail.com"
+                            ["firstname"]=>
+                            string(7) "Florian"
+                            ["gender"]=>
+                            bool(true)
+                            ["id"]=>
+                            int(209790464)
+                            ["partnerId"]=>
+                            int(500018)
+                            ["phone"]=>
+                            string(14) "036964 - 777-0"
+                            ["surname"]=>
+                            string(9) "MÃ¼ller"
+                            ["next"]=>
+                            object(stdClass)#45 (12) {
+                              ["email"]=>
+                              string(26) "ruediger.lang@consileon.de"
+                              ["fax"]=>
+                              string(9) "asd324324"
+                              ["firstname"]=>
+                              string(5) "Fritz"
+                              ["fronttitle"]=>
+                              string(2) "Dr"
+                              ["gender"]=>
+                              bool(false)
+                              ["id"]=>
+                              int(209790470)
+                              ["mobile"]=>
+                              string(5) "sfsdf"
+                              ["partnerId"]=>
+                              int(500018)
+                              ["pasttitle"]=>
+                              string(15) "Chef-Bearbeiter"
+                              ["phone"]=>
+                              string(6) "dsg444"
+                              ["surname"]=>
+                              string(16) "MÃ¼ller Werner"
+                              ["next"]=>
+                              object(stdClass)#46 (12) {
+                                ["email"]=>
+                                string(26) "ruediger.lang@consileon.de"
+                                ["fax"]=>
+                                string(5) "03234"
+                                ["firstname"]=>
+                                string(6) "VTest1"
+                                ["fronttitle"]=>
+                                string(2) "Dr"
+                                ["gender"]=>
+                                bool(true)
+                                ["id"]=>
+                                int(209790474)
+                                ["mobile"]=>
+                                string(6) "034534"
+                                ["partnerId"]=>
+                                int(500018)
+                                ["pasttitle"]=>
+                                string(11) "Mitarbeiter"
+                                ["phone"]=>
+                                string(6) "023432"
+                                ["surname"]=>
+                                string(6) "NTest2"
+                                ["next"]=>
+                                object(stdClass)#47 (9) {
+                                  ["email"]=>
+                                  string(27) "ruediger.lang@volkswagen.de"
+                                  ["firstname"]=>
+                                  string(1) "c"
+                                  ["gender"]=>
+                                  bool(false)
+                                  ["id"]=>
+                                  int(209790488)
+                                  ["partnerId"]=>
+                                  int(500018)
+                                  ["pasttitle"]=>
+                                  string(1) "c"
+                                  ["phone"]=>
+                                  string(1) "1"
+                                  ["surname"]=>
+                                  string(1) "c"
+                                  ["next"]=>
+                                  object(stdClass)#48 (8) {
+                                    ["email"]=>
+                                    string(17) "o.boleck@oleck.pl"
+                                    ["firstname"]=>
+                                    string(5) "Oleck"
+                                    ["gender"]=>
+                                    bool(true)
+                                    ["id"]=>
+                                    int(209790468)
+                                    ["partnerId"]=>
+                                    int(500018)
+                                    ["phone"]=>
+                                    string(14) "01379-12231324"
+                                    ["surname"]=>
+                                    string(6) "Boleck"
+                                    ["next"]=>
+                                    object(stdClass)#49 (8) {
+                                      ["email"]=>
+                                      string(17) "m.mueller@ah-w.de"
+                                      ["firstname"]=>
+                                      string(7) "Martina"
+                                      ["gender"]=>
+                                      bool(false)
+                                      ["id"]=>
+                                      int(209790490)
+                                      ["partnerId"]=>
+                                      int(500018)
+                                      ["phone"]=>
+                                      string(11) "05361 15897"
+                                      ["surname"]=>
+                                      string(9) "MÃ¼ller"
+                                      ["next"]=>
+                                      object(stdClass)#50 (7) {
+                                        ["email"]=>
+                                        string(20) "bosselmann@gmail.com"
+                                        ["firstname"]=>
+                                        string(7) "Florian"
+                                        ["gender"]=>
+                                        bool(false)
+                                        ["id"]=>
+                                        int(209790478)
+                                        ["partnerId"]=>
+                                        int(500018)
+                                        ["phone"]=>
+                                        string(8) "23423423"
+                                        ["surname"]=>
+                                        string(10) "Bosselmann"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</pre><hr>stdClass Object
+(
+    [return] => stdClass Object
+        (
+            [firstname] => Admin
+            [gender] => 1
+            [id] => 171951231
+            [partnerId] => 500018
+            [positionTitle] => ET-Personal
+            [salutation] => Herr
+            [surname] => Administrator
+            [next] => stdClass Object
+                (
+                    [email] => Waechtersbach@t-online.de
+                    [fax] => 036964 - 777-14
+                    [firstname] => Guido
+                    [gender] => 1
+                    [id] => 141473349
+                    [partnerId] => 500018
+                    [pasttitle] => KP-L
+                    [phone] => 036964 - 777-0
+                    [positionTitle] => GeschÃÂÃÂ¤ftsfÃÂÃÂ¼hrer
+                    [salutation] => Herr
+                    [surname] => WÃ¤chtersbach
+                    [next] => stdClass Object
+                        (
+                            [email] => bosselmann@gmail.com
+                            [firstname] => Florian
+                            [gender] => 1
+                            [id] => 209790476
+                            [partnerId] => 500018
+                            [phone] => 23423423
+                            [surname] => Bosselmann
+                            [next] => stdClass Object
+                                (
+                                    [email] => bosselmann@gmail.com
+                                    [firstname] => BÃ¤rbel
+                                    [gender] => 
+                                    [id] => 209790484
+                                    [partnerId] => 500018
+                                    [phone] => 234234
+                                    [surname] => SchÃ¤fer
+                                    [next] => stdClass Object
+                                        (
+                                            [email] => ruediger.lang@consileon.de
+                                            [firstname] => Fritz
+                                            [fronttitle] => Dr
+                                            [gender] => 
+                                            [id] => 209790472
+                                            [mobile] => sfsdf
+                                            [partnerId] => 500018
+                                            [pasttitle] => Chef-Bearbeiter
+                                            [phone] => 234234
+                                            [surname] => MÃ¼ler Werner
+                                            [next] => stdClass Object
+                                                (
+                                                    [email] => ras12@gmx.nez
+                                                    [firstname] => Peter
+                                                    [gender] => 
+                                                    [id] => 209790480
+                                                    [partnerId] => 500018
+                                                    [pasttitle] => test
+                                                    [phone] => 1234
+                                                    [surname] => MÃ¼ller
+                                                    [next] => stdClass Object
+                                                        (
+                                                            [email] => bosselmann@gmail.com
+                                                            [firstname] => Florian
+                                                            [gender] => 
+                                                            [id] => 209790482
+                                                            [partnerId] => 500018
+                                                            [phone] => 234234234
+                                                            [surname] => Bosselmann
+                                                            [next] => stdClass Object
+                                                                (
+                                                                    [email] => ruediger.lang@consileon.de
+                                                                    [fax] => 876876
+                                                                    [firstname] => Test
+                                                                    [fronttitle] => test
+                                                                    [gender] => 1
+                                                                    [id] => 209790486
+                                                                    [mobile] => 8060867
+                                                                    [partnerId] => 500018
+                                                                    [pasttitle] => kh
+                                                                    [phone] => 09686
+                                                                    [surname] => kj
+                                                                    [next] => stdClass Object
+                                                                        (
+                                                                            [email] => k.knopp@autolab.de
+                                                                            [firstname] => Karl
+                                                                            [gender] => 
+                                                                            [id] => 209790466
+                                                                            [partnerId] => 500018
+                                                                            [phone] => 0800-AUTOLAB
+                                                                            [surname] => Knopp
+                                                                            [next] => stdClass Object
+                                                                                (
+                                                                                    [email] => d.mueller@ah-august.de
+                                                                                    [firstname] => Dieter
+                                                                                    [gender] => 1
+                                                                                    [id] => 209790460
+                                                                                    [partnerId] => 500018
+                                                                                    [phone] => 328012
+                                                                                    [surname] => MÃ¼ler
+                                                                                    [next] => stdClass Object
+                                                                                        (
+                                                                                            [email] => marcel.kuester@mail.com
+                                                                                            [firstname] => Marcel
+                                                                                            [gender] => 1
+                                                                                            [id] => 209790462
+                                                                                            [partnerId] => 500018
+                                                                                            [phone] => 32123
+                                                                                            [surname] => KÃ¼ster
+                                                                                            [next] => stdClass Object
+                                                                                                (
+                                                                                                    [email] => m.reisch@missionmedia.de
+                                                                                                    [firstname] => Manfred
+                                                                                                    [gender] => 1
+                                                                                                    [id] => 209790458
+                                                                                                    [partnerId] => 500018
+                                                                                                    [phone] => 089-12345
+                                                                                                    [surname] => Muster
+                                                                                                    [next] => stdClass Object
+                                                                                                        (
+                                                                                                            [email] => bosselmann@gmail.com
+                                                                                                            [firstname] => Florian
+                                                                                                            [gender] => 1
+                                                                                                            [id] => 209790464
+                                                                                                            [partnerId] => 500018
+                                                                                                            [phone] => 036964 - 777-0
+                                                                                                            [surname] => MÃ¼ller
+                                                                                                            [next] => stdClass Object
+                                                                                                                (
+                                                                                                                    [email] => ruediger.lang@consileon.de
+                                                                                                                    [fax] => asd324324
+                                                                                                                    [firstname] => Fritz
+                                                                                                                    [fronttitle] => Dr
+                                                                                                                    [gender] => 
+                                                                                                                    [id] => 209790470
+                                                                                                                    [mobile] => sfsdf
+                                                                                                                    [partnerId] => 500018
+                                                                                                                    [pasttitle] => Chef-Bearbeiter
+                                                                                                                    [phone] => dsg444
+                                                                                                                    [surname] => MÃ¼ller Werner
+                                                                                                                    [next] => stdClass Object
+                                                                                                                        (
+                                                                                                                            [email] => ruediger.lang@consileon.de
+                                                                                                                            [fax] => 03234
+                                                                                                                            [firstname] => VTest1
+                                                                                                                            [fronttitle] => Dr
+                                                                                                                            [gender] => 1
+                                                                                                                            [id] => 209790474
+                                                                                                                            [mobile] => 034534
+                                                                                                                            [partnerId] => 500018
+                                                                                                                            [pasttitle] => Mitarbeiter
+                                                                                                                            [phone] => 023432
+                                                                                                                            [surname] => NTest2
+                                                                                                                            [next] => stdClass Object
+                                                                                                                                (
+                                                                                                                                    [email] => ruediger.lang@volkswagen.de
+                                                                                                                                    [firstname] => c
+                                                                                                                                    [gender] => 
+                                                                                                                                    [id] => 209790488
+                                                                                                                                    [partnerId] => 500018
+                                                                                                                                    [pasttitle] => c
+                                                                                                                                    [phone] => 1
+                                                                                                                                    [surname] => c
+                                                                                                                                    [next] => stdClass Object
+                                                                                                                                        (
+                                                                                                                                            [email] => o.boleck@oleck.pl
+                                                                                                                                            [firstname] => Oleck
+                                                                                                                                            [gender] => 1
+                                                                                                                                            [id] => 209790468
+                                                                                                                                            [partnerId] => 500018
+                                                                                                                                            [phone] => 01379-12231324
+                                                                                                                                            [surname] => Boleck
+                                                                                                                                            [next] => stdClass Object
+                                                                                                                                                (
+                                                                                                                                                    [email] => m.mueller@ah-w.de
+                                                                                                                                                    [firstname] => Martina
+                                                                                                                                                    [gender] => 
+                                                                                                                                                    [id] => 209790490
+                                                                                                                                                    [partnerId] => 500018
+                                                                                                                                                    [phone] => 05361 15897
+                                                                                                                                                    [surname] => MÃ¼ller
+                                                                                                                                                    [next] => stdClass Object
+                                                                                                                                                        (
+                                                                                                                                                            [email] => bosselmann@gmail.com
+                                                                                                                                                            [firstname] => Florian
+                                                                                                                                                            [gender] => 
+                                                                                                                                                            [id] => 209790478
+                                                                                                                                                            [partnerId] => 500018
+                                                                                                                                                            [phone] => 23423423
+                                                                                                                                                            [surname] => Bosselmann
+                                                                                                                                                        )
+
+                                                                                                                                                )
+
+                                                                                                                                        )
+
+                                                                                                                                )
+
+                                                                                                                        )
+
+                                                                                                                )
+
+                                                                                                        )
+
+                                                                                                )
+
+                                                                                        )
+
+                                                                                )
+
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

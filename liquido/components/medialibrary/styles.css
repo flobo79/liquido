@@ -1,0 +1,45 @@
+.row {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	height:40px;
+	clear:both;
+	border-bottom:1px solid #F8F8F8;
+	cursor:pointer;
+	width:100%;
+	overflow:hidden;
+}
+.row .label {
+	padding-top:6px;
+	height:25px;
+}
+.row .arrow {
+	float:right;
+	width:10px;
+	padding-top:10px;
+	padding-right:1px;
+	background-image: url('gfx/arrow_right.gif');
+	background-repeat: no-repeat;
+	background-position:center;
+}
+.row .icon {
+	float:left;
+	width:55px;
+	padding:1px;
+}
+.row .folder {
+	float:left;
+	width:50px;
+	padding:1px;
+	height:25px;
+	background-image: url('gfx/folder.gif');
+	background-repeat: no-repeat;
+	background-position:center;
+}
+.row .icon .thumb {
+
+}
+.row .icon .file {
+	background-image: url('gfx/file.gif');
+	background-repeat: no-repeat;
+	background-position:center;
+}

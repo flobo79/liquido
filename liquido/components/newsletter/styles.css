@@ -1,0 +1,40 @@
+table {
+	border:0;
+	padding:1px;
+	margin:0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+
+th {
+	text-align:left;
+	font-size:11px;
+	color:#666666;
+}
+
+#details_list_issues {
+	width:100%;
+}
+
+.row1 {
+	background-color:#FFFFFF;
+	cursor:pointer;
+}
+
+.row2 {
+	background-color:#F8F8F8;
+	cursor:pointer;
+}
+
+.infobox .title {
+	font-weight:bold;
+	height:20px;
+	padding-left:25px;
+	padding-top:7px;
+	margin-bottom:20px;
+	background:#F8F8F8 url('gfx/alert_sm.gif') left no-repeat;
+}
+
+.object textarea {
+	width:100%;
+}

@@ -1,0 +1,94 @@
+@media print{
+	.row1 {
+		background-color: #FFFFFF;
+	}
+	.row1 .over {
+		background-color: #F5F5F5;
+	}
+	.row2 {
+		background-color: #EAF2E5;
+	}
+	.row2 .over {
+		background-color: #E1E9DC;
+	}
+	.row3 {
+		background-color: #AEC2C1;
+	}
+	body,table {
+		font-family: Tahoma, "Times New Roman", Times, sans-serif;
+		color: #000000;
+		font-size: 9px;
+		margin: 0px;
+		padding: 0px;
+	}
+	table {
+		border-bottom: 1px solid #DBDBDB;
+		border-left: 1px solid #DBDBDB;
+	}
+	td {
+		padding: 3px;
+		border-top: 1px solid #DBDBDB;
+		border-right: 1px solid #DBDBDB;
+	}
+	th {
+		padding: 0 3px 0 3px;
+		color: #000000;
+		background-color: #DBDBDB;
+		/*background-image: url(gfx/th_bg_normal.png);*/
+		text-align: left;
+		/*height: 20px;*/
+	}
+	
+	#tableheader {
+		display: none;
+		visibility: hidden;
+	}
+	
+	.highlight {
+		background-color: #95B785;
+		/*background-image: url(gfx/th_bg_over.png);*/
+	}
+	th img {
+		margin-left: 2px;
+	}
+	th a {
+		color: #000000;
+		text-decoration: none;
+		display: block;
+	}
+	.error {
+		color: #CC0000;
+		font-weight: bold;
+	}
+	.borderless {
+		margin: 0px;
+		padding: 0px;
+	}
+	.fakebutton {
+			border: 1px solid #ccc;
+			/*background: #fcfcfc;*/
+			font-size: 9px;
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			padding: 3px;
+			background-image: url(gfx/th_bg_normal.png);
+			color: #000000;
+			text-decoration: none;
+			font-weight: bold;
+	}
+	.formbutton {
+			border: 1px solid #ccc;
+			/*background: #fcfcfc;*/
+			background-image: url(gfx/th_bg_normal.png);
+			/*width: 110px;*/
+			font-size: 9px;
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-weight: bold;
+	}
+	.formfeld {
+			border: 1px solid #ccc;
+			background: #fcfcfc;
+			/*width: 100%;*/
+			font-size: 9px;
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+}

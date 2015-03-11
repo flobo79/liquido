@@ -1,0 +1,115 @@
+
+.Slideshow {
+	
+}
+
+.page_list {
+	
+}
+.page_list div {
+	width:80px;
+	display:inline;
+	overflow:hidden;
+	margin-right:5px;
+	margin-bottom:5px;
+	cursor:pointer;
+}
+
+.ss_controls {
+	border:1px solid #333333;
+	background-color:#000;
+	color:#FFF;
+	font-size:16px;
+	bottom:5px;
+	height:50px;
+	left:10px;
+	margin:8px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	padding:5px;
+	position:absolute;
+	text-align:center;
+	width:642px;
+	opacity:0.9;
+	z-index:500;
+}
+
+
+.ss_controls_info {
+float:left;
+font-size:11px;
+padding:18px;
+}
+
+.ss_controls_box {
+float:right;
+margin:15px;
+width:100px;
+}
+
+.ss_controls_box div {
+	float:left;
+	height:20px;
+	line-height:20px;
+	width:20px;
+	cursor:pointer;
+}
+
+#ss_controls_play {
+	background:transparent url(play.gif) center no-repeat;
+}
+#ss_controls_play.stop {
+	background:transparent url(stop.gif) center no-repeat;
+}
+#ss_controls_minus {
+	
+}
+#ss_controls_sec {
+	
+}
+#ss_plus {
+	
+}
+
+#ss_icons div {
+	border:1px solid #333333;
+	
+	cursor:pointer;
+	float:left;
+	height:80px;
+	margin:2px;
+	overflow:hidden;
+	width:80px;
+}
+#ss_icons div:hover {
+	border-color:#FFF;
+	opacity:1;
+}
+#ss_view {
+height:90%;
+left:0;
+margin:10px;
+position:absolute;
+text-align:center;
+top:0;
+width:670px;
+}
+
+.Slideshow #window_content {
+height:440px;
+overflow:hidden;
+position:absolute;
+top:10px;
+width:690px;
+z-index:500;
+}
+.Slideshow  #bu_modal_close {
+	background:transparent url(../../gfx/modal_close.png) repeat scroll 0 0;
+height:22px;
+right:0;
+width:23px;
+z-index:9999;
+border:0 none;
+cursor:pointer;
+position:absolute;
+}

@@ -1,0 +1,113 @@
+<wddxPacket version="1.0">
+	<header />
+	<data>
+		<struct>
+			<var name="pictures">
+				<struct>
+					<var name="pic0">
+						<struct>
+							<var name="thumb_url">
+								<string>images/thumb/sp.jpg</string>
+							</var>
+							<var name="big_url">
+								<string>images/big/sp.jpg</string>
+							</var>
+						</struct>
+					</var>
+					<var name="pic1">
+						<struct>
+							<var name="thumb_url">
+								<string>images/thumb/asp.jpg</string>
+							</var>
+							<var name="big_url">
+								<string>images/big/asp.jpg</string>
+							</var>
+						</struct>
+					</var>
+					<var name="pic2">
+						<struct>
+							<var name="thumb_url">
+								<string>images/thumb/bsp.jpg</string>
+							</var>
+							<var name="big_url">
+								<string>images/big/bsp.jpg</string>
+							</var>
+						</struct>
+					</var>
+					<var name="pic3">
+						<struct>
+							<var name="thumb_url">
+								<string>images/thumb/csp.jpg</string>
+							</var>
+							<var name="big_url">
+								<string>images/big/csp.jpg</string>
+							</var>
+						</struct>
+					</var>
+					<var name="pic4">
+						<struct>
+							<var name="thumb_url">
+								<string>images/thumb/dsp.jpg</string>
+							</var>
+							<var name="big_url">
+								<string>images/big/dsp.jpg</string>
+							</var>
+						</struct>
+					</var>
+					<var name="pic5">
+						<struct>
+							<var name="thumb_url">
+								<string>images/thumb/esp.jpg</string>
+							</var>
+							<var name="big_url">
+								<string>images/big/esp.jpg</string>
+							</var>
+						</struct>
+					</var>
+					<var name="pic6">
+						<struct>
+							<var name="thumb_url">
+								<string>images/thumb/fsp.jpg</string>
+							</var>
+							<var name="big_url">
+								<string>images/big/fsp.jpg</string>
+							</var>
+						</struct>
+					</var>
+					<var name="pic7">
+						<struct>
+							<var name="thumb_url">
+								<string>images/thumb/gsp.jpg</string>
+							</var>
+							<var name="big_url">
+								<string>images/big/gsp.jpg</string>
+							</var>
+						</struct>
+					</var>
+				</struct>
+			</var>
+			<var name="texts">
+				<struct>
+					<var name="text0">
+						<string>Spruch 1 - datt is ma wadd</string>
+					</var>
+					<var name="text1">
+						<string>Spruch 2 - eene meene meeeee</string>
+					</var>
+					<var name="text2">
+						<string>sed diam voluptua. At vero eos et accusam</string>
+					</var>
+					<var name="text3">
+						<string>sed diam nonumy eirmod tempor invidunt</string>
+					</var>
+					<var name="text4">
+						<string>Stet clita kasd gubergren, no sea takimata </string>
+					</var>
+					<var name="text5">
+						<string>sed diam nonumy eirmod tempor invidunt </string>
+					</var>
+				</struct>
+			</var>
+		</struct>
+	</data>
+</wddxPacket>

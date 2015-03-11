@@ -1,0 +1,97 @@
+<div id="editMember" class="floating">
+    <form name="mikos_editMember" id="mikos_editMember" method="post" action="/mikos/libs/ajax.php">
+    <div class="window" id="editMemberContent" style="width:300px; margin-left:-150px;">
+    	<div id="edit_loading" style="display:none;" ><div class="ajax_wait"></div> Lade Mitgliedsdaten </div>
+    	<div id="edit_content">
+            <h3 id="edit_headline">Mitarbeiter bearbeiten</h3>
+            <table border="0" cellpadding="4" cellspacing="4">
+              <tr>
+                <td class="plain">Anrede:</td>
+                <td class="bold"><input type="text" name="salutation" id="d_salutation" class="inputclass_n" value="" size="20" maxlength="50" onfocus="this.blur();" /></td>
+              </tr>
+              <tr>
+                <td class="plain">Titel:</td>
+                <td class="bold"><input type="text" name="frontTitle" id="d_frontTitle" class="inputclass_n" value="" size="20" maxlength="50" onfocus="this.blur();"/></td>
+              </tr>
+              <tr>
+                <td class="plain">Vorname:</td>
+                <td class="bold"><input type="text" name="firstname" id="d_firstName" class="inputclass_n" value="" size="20" maxlength="50" onfocus="this.blur();"/></td>
+              </tr>
+              <tr>
+                <td class="plain">Nachname:</td>
+                <td class="bold"><input type="text" name="surname" id="d_surname" class="inputclass_n" value="" size="20" maxlength="50" onfocus="this.blur();"/></td>
+              </tr>
+              <tr>
+                <td class="plain">Stra&szlig;e:</td>
+                <td class="bold">
+                 <!--<input type="text" name="street" id="d_street" class="inputclass_p" value="" size="20" maxlength="50" />-->
+	               <input type="text" name="street" id="d_street" class="inputclass_p" value=""  style="width:70px;" maxlength="50"/>
+		      		   <input type="text" name="streetAdd1" id="d_streetAdd1" class="inputclass_p" value=""  style="width:14px;" maxlength="10" />
+					       <input type="text" name="streetAdd2" id="d_streetAdd2" class="inputclass" value=""  style="width:14px;" maxlength="10" />
+                </td>
+
+              </tr>
+              <tr>
+                <td class="plain">PLZ:</td>
+                <td class="bold"><input type="text" name="zip" id="d_zip" class="inputclass_p" value="" size="20" maxlength="50" /></td>
+              </tr>
+              <tr>
+                <td class="plain">Ort:</td>
+                <td class="bold"><input type="text" name="city" id="d_city" class="inputclass_p" value="" size="20" maxlength="50" /></td>
+              </tr>              
+              <tr>
+                <td class="plain">Telefonnummer:</td>
+                <td class="bold"><input type="text" name="telephone" id="d_telephone" class="inputclass_p" value="" size="20" maxlength="30" /></td>
+              </tr>
+              <tr>
+                <td class="plain">Mobilnummer:</td>
+                <td class="bold"><input type="text" name="mobile" id="d_mobile" class="inputclass" value="" size="20" maxlength="30"/></td>
+              </tr>
+              <tr>
+                <td class="plain">E-Mail:</td>
+                <td class="bold"><input type="text" name="email" id="d_email" class="inputclass_p" value="" size="20"  maxlength="50" /></td>
+              </tr>
+              <tr>
+                <td class="plain">Geburtsdatum:</td>
+                <td class="bold"><input type="text" name="birthday" id="d_birthday" class="inputclass_n" value="" size="20" maxlength="30" onfocus="this.blur();"/></td>
+              </tr>
+              <tr>
+                <td class="plain">Vertragsnummer:</td>
+                <td class="bold"><input type="text" name="contractId" id="d_contractId" class="inputclass_n" value="" size="20" maxlength="20" onfocus="this.blur();"/></td>
+              </tr>
+              <tr>
+                <td class="plain">Mitgliedsnummer:</td>
+                <td class="bold"><input type="text" name="memberId" id="d_memberId" class="inputclass_n" value="" size="20" maxlength="20" onfocus="this.blur();"/></td>
+              </tr>			  
+			       <tr>
+                <td class="plain">Fahrgestellnummer:</td>
+                <td class="bold"><input type="test" name="carvinNr" id="d_carvinNr" class="inputclass_n" value="" size="20" maxlength="20" onfocus="this.blur();"/></td>
+              </tr>
+              <tr>
+                <td class="plain">Beginn Betreuung:</td>
+                <td class="bold"><input type="text" name="totalValidFrom" id="d_totalValidFrom" class="inputclass_n" value="" size="20" maxlength="100" onfocus="this.blur();"/></td>
+              </tr>
+              <tr>
+                <td class="plain">Beginn Verl&auml;ngerung:</td>
+                <td class="bold"><input type="text" name="validFrom" id="d_validFrom" class="inputclass_n" value="" size="20" maxlength="100" onfocus="this.blur();"/></td>
+              </tr>
+              <tr>
+                <td class="plain">Kontakt:</td>
+                <td class="bold"><input type="text" name="contacts24M" id="d_contacts24M" class="inputclass_n" value="" size="20" maxlength="100" onfocus="this.blur();"/></td>
+              </tr>
+            </table>
+			<div style="width:100%; height:40px;">
+			[{if $custInfo->webStatus > 2}]
+			<input type="submit" class="submit" id="bu_submit" value="Anlegen" /> <input type="button" class="resetclass" id="bu_delete" value="Löschen" /> [{/if}]  <input type="button" class="resetclass" id="bu_cancel" value="Abbrechen" />
+            <div id="output"></div><br />
+            </div>
+            <input type="hidden" name="cpis_action" id="cpis_action" value="doEditMemberData" />
+            <input type="hidden" name="class" value="CPIS" />
+            <input type="hidden" name="id" id="d_id" value="" />
+			<div class="mand"> = Pflichtfeld</div>
+        </div>
+    </div>
+    </form>
+<div class="background"></div>
+</div>
+

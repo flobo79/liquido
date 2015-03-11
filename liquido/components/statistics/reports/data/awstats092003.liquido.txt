@@ -1,0 +1,571 @@
+AWSTATS DATA FILE 5.6 (build 1.533)
+# If you remove this file, all statistics for date 2003-09 will be lost/reset.
+
+# Position (offset in bytes) in this file of beginning of each section
+# for direct I/O access. If you made changes somewhere in this file, you
+# should also remove completely the MAP section (AWStats will rewrite it
+# at next update).
+BEGIN_MAP 26
+POS_GENERAL 1804                
+POS_TIME 2399                
+POS_VISITOR 13307               
+POS_DAY 15605               
+POS_DOMAIN 3011                
+POS_LOGIN 3179                
+POS_ROBOT 3313                
+POS_WORMS 16472               
+POS_EMAILSENDER 3504                
+POS_EMAILRECEIVER 3647                
+POS_SESSION 16532               
+POS_SIDER 16744               
+POS_FILETYPES 3782                
+POS_OS 4023                
+POS_BROWSER 4169                
+POS_SCREENSIZE 4312                
+POS_UNKNOWNREFERER 4386                
+POS_UNKNOWNREFERERBROWSER 4648                
+POS_ORIGIN 4863                
+POS_SEREFERRALS 5013                
+POS_PAGEREFS 5169                
+POS_SEARCHWORDS 8723                
+POS_MISC 2155                
+POS_KEYWORDS 8898                
+POS_ERRORS 8984                
+POS_SIDER_404 9119                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of old records - Nb of new records - Nb of corrupted - Nb of dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20031001011947 232470 39073976 31906000403
+FirstTime 20030901000135
+LastTime 20030930202521
+LastUpdate 20031001020002 2450 0 2448 0 1
+TotalVisits 177                 
+TotalUnique 49                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 52                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 9
+MediaPlayerSupport 0 0 0
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+PDFSupport 0 0 0
+AddToFavourites 0 16 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth
+BEGIN_TIME 24
+0 235 1357 12075612
+1 279 1084 4903529
+2 198 795 1267966
+3 231 898 2677831
+4 332 982 6342401
+5 154 528 4289502
+6 94 508 5034872
+7 189 1222 11568599
+8 475 3445 26936552
+9 811 7292 63063957
+10 1020 11705 112490423
+11 1350 15037 136719558
+12 423 3549 31301214
+13 964 12004 109077503
+14 1185 11890 116786409
+15 1458 16770 139055432
+16 699 6690 47822623
+17 520 1868 7230032
+18 1205 5190 48126124
+19 412 2152 15719033
+20 301 1103 3367527
+21 37 290 847092
+22 50 275 1826288
+23 69 345 2276700
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 12691 106979 910806779
+END_DOMAIN
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 2
+googlebot 6 3750 20030904164630
+netcraft 1 0 20030910155025
+END_ROBOT
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 10
+css 782 431128 0 0
+png 353 56009 0 0
+htm 3 9790 0 0
+jsp 2 14818 0 0
+swf 2 272506 0 0
+php 11714 88030961 0 0
+html 970 3130795 0 0
+js 75 171271 0 0
+jpg 67031 812553201 0 0
+gif 26047 6136300 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 9
+macintosh 157
+winxp 18846
+winnt 401
+win2000 17361
+win98 4585
+linux 123
+macosx 133
+winme 1393
+Unknown 63980
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 7
+msie6.0 38249
+konqueror 6
+msie5.01 1616
+mozilla 5840
+msie5.5 1552
+Unknown 59559
+msie5.22 157
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 6
+CFNetwork/1.1 20030908121002
+Java1.4.0_01 20030918122333
+WMP/1.0 20030919110446
+Java1.3.1_04 20030925142549
+PHP/4.2.2 20030930160415
+Mozilla/3.01_(compatible;) 20030930160416
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 5
+CFNetwork/1.1 20030908121002
+Java1.4.0_01 20030918122333
+WMP/1.0 20030919110446
+Java1.3.1_04 20030925142549
+PHP/4.2.2 20030930160415
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 1428 64844
+From1 0 0
+From2 1 1
+From3 915 2487
+From4 10347 39647
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google. 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 57
+http://mm-cmm.de/liquido/body.php 273 377
+http://mm-cmm.de/liquido/components/medialibrary/list.php 164 164
+http://mm-cmm.de/liquido/head.php 80 231
+http://mm-cmm.de/liquido/components/newsletter/body.php 68 270
+http://mm-cmm.de/liquido/ 52 52
+http://mm-cmm.de/liquido/components/editors/edit_rights.php 33 40
+http://mm-cmm.de/liquido/components/newsletter/right.php 28 73
+http://mm-cmm.de/index.php 25 344
+http://mm-cmm.de/page.php 24 295
+http://mm-cmm.de/liquido/components/newsletter/compose/medialibrary/list.php 22 22
+http://mm-cmm.de/liquido/components/newsletter/compose/medialibrary/list_columnshead.php 0 3
+http://mm-cmm.de/liquido/components/medialibrary/list_functions_picture.php 2 2
+http://mm-cmm.de/liquido/components/editors/bottom.php 2 10
+http://mm-cmm.de/liquido/components/editors/detail_editor.php 4 5
+http://mm-cmm.de 6 6
+http://mm-cmm.de/liquido/components/contents/body.php 0 35
+http://mm-cmm.de/liquido/components/editors/detail_group.php 3 3
+http://mm-cmm.de/phpmyadmin/ 5 5
+http://mm-cmm.de/liquido/components/editors/list_columnshead.html 0 2
+http://mm-cmm.de/phpmyadmin/db_details_structure.php 2 5
+http://mm-cmm.de/liquido/components/medialibrary/list_left.php 0 126
+http://dialoc.klaus.de/ulrike/kis_login.php4 0 8
+http://mm-cmm.de/liquido/components/templates/classes/body.php 9 9
+http://mm-cmm.de/liquido/components/medialibrary/pic_popup.php 0 1
+http://de.webmasterplan.com 4 4
+http://mm-cmm.de/liquido/components/newsletter/compose/medialibrary/list_iframe.php 2 2
+http://mm-cmm.de/phpmyadmin/queryframe.php 1 1
+http://mm-cmm.de/phpmyadmin/sql.php 4 4
+http://mm-cmm.de/liquido/components/editors/top.php 0 3
+http://mm-cmm.de/talk2/ 0 4
+http://mm-cmm.de/phpmyadmin/main.php 0 2
+http://mm-cmm.de/liquido/components/newsletter/compose/medialibrary/list_details.php 0 3
+http://mm-cmm.de/liquido/components/newsletter/compose/medialibrary/pic_popup.php 0 1
+http://mm-cmm.de/liquido/components/medialibrary/list_ftp_window.php 1 5
+http://mm-cmm.de/phpmyadmin/left.php 4 6
+http://mm-cmm.de/liquido/components/newsletter/compose/medialibrary/index.php 12 12
+http://mm-cmm.de/liquido/components/medialibrary/list_details.php 9 25
+http://mm-cmm.de/liquido/components/templates/structures/left.php 0 1
+http://mm-cmm.de/liquido/components/medialibrary/list_columnshead.html 0 2
+http://mm-cmm.de/liquido/components/templates/body.php 12 35
+http://mm-cmm.de/liquido/components/newsletter/compose/medialibrary/list_left.php 0 16
+http://mm-cmm.de/liquido/components/templates/left_pane.php 7 32
+http://mm-cmm.de/liquido/components/contents/left_pane.php 6 12
+http://mm-cmm.de/liquido/components/medialibrary/list_uploadwindow.php 5 7
+http://mm-cmm.de/liquido/login.php 13 37
+http://213.239.193.66/liquido/components/newsletter/body.php 0 8
+http://dialoc.klaus.de/ulrike/kis_login.jar 0 7
+http://mm-cmm.de/liquido/components/newsletter/left_pane.php 16 37
+http://mm-cmm.de/liquido/components/medialibrary/list_iframe.php 4 4
+http://dialoc.klaus.de/ulrike/kis_login.jsp 0 9
+http://mm-cmm.de/liquido/components/templates/structures/body.php 3 3
+http://mm-cmm.de/phpmyadmin/tbl_properties_structure.php 2 2
+http://mm-cmm.de/phpmyadmin/tbl_change.php 2 3
+http://mm-cmm.de/liquido/components/templates/classes/left.php 0 2
+http://mm-cmm.de/liquido/components/medialibrary/list_delete.php 6 8
+http://dialoc/ulrike/kis_login.jar 0 32
+http://mm-cmm.de/liquido/components/templates/right.php 0 70
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 1
+erfolg+einer+website 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 3
+website 1
+erfolg 1
+einer 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+302 308 1935525
+206 22 1549255
+301 71 22443
+404 1586 383301
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 54
+/liquido/gfx/logout.gif 1 http://www.mm-cmm.de/liquido/body.php
+/php 1 -
+/liquido/bilder/1256/909/thumbnail.jpg 11 http://www.media5k.de/page.php
+/liquido/components/newsletter/components/newsletter/left_pane.php 4 http://www.mm-cmm.de/liquido/components/newsletter/
+/liquido/components/start/gfx/logout.gif 1 http://www.mm-cmm.de/liquido/body.php
+/liquido/components/contents/help/gfx/insertpos.gif 1 http://www.mm-cmm.de/liquido/body.php
+/<xcontainer>news_06.gif 1 http://www.mm-cmm.de/liquido/components/contents/body.php
+/webkit/jsp/images/7x7orang.gif 5 http://www.mm-cmm.de/templates/Ralf/kis_login.jsp
+/clubpartner 1 -
+/liquido/components/contents/help/gfx/details.gif 1 http://www.mm-cmm.de/liquido/body.php
+/gfx/liquido_head.gif 1 http://www.mm-cmm.de/liquido/components/editors/lib/sendaccess.php
+/<xcontainer>5x5rose.gif 1 http://www.mm-cmm.de/liquido/components/contents/body.php
+/<xcontainer>news_03.gif 1 http://www.mm-cmm.de/liquido/components/contents/body.php
+/lib/css.css 14 http://www.mm-cmm.de/liquido/components/editors/lib/sendaccess.php
+/liquido/components/contents/help/gfx/trace.gif 1 http://www.mm-cmm.de/liquido/body.php
+/liquido/test.cmf 1 -
+/phpmadmin 1 -
+/<!--%20xclass%20131%20nicht%20vorhanden%20-->/liquido/container/9999/7x7orang.gif 1 http://mm-cmm.de/page.php
+/liquido/container/21/top.gif 70 http://www.mm-cmm.de:8080/webkit/GetFahrzeugDatenServlet
+/liquido/components/startgfx/menubar.gif 1 http://www.mm-cmm.de/liquido/body.php
+/liquido/gfx/insertpos.gif 1 http://www.mm-cmm.de/liquido/body.php
+/<xcontainer>news_02.gif 1 http://www.mm-cmm.de/liquido/components/contents/body.php
+/css/vw_c.css 1215 http://www.mm-cmm.de/
+/liquido/testxxx.html 3 -
+/liquido/bilder/1256/909/small.jpg 10 -
+/webkit/jsp/images/pagehead_36.gif 5 http://www.mm-cmm.de/templates/Ralf/kis_login.jsp
+/webkit/jsp/images/5x5rose.gif 5 http://www.mm-cmm.de/templates/Ralf/kis_login.jsp
+/gfx/bu_start.gif 1 http://www.mm-cmm.de/liquido/components/editors/lib/sendaccess.php
+/liquido/components/newsletter/head.php 2 http://www.mm-cmm.de/liquido/
+/liquido/components/newsletter/gfx/bu_publish.gif 1 http://www.mm-cmm.de/liquido/head.php
+/liquido/gfx/trashcan_full.gif 1 http://www.mm-cmm.de/liquido/components/contents/left_pane.php
+/<xcontainer>div-head_01.gif 27 http://www.mm-cmm.de/page.php
+/<xcontainer>news_04.gif 1 http://www.mm-cmm.de/liquido/components/contents/body.php
+/gfx/help.gif 9 http://www.mm-cmm.de/liquido/body.php
+/liquido/components/newsletter/components/newsletter/body.php 4 http://www.mm-cmm.de/liquido/components/newsletter/
+/liq 1 -
+/sqladmin 1 -
+/cobalt-images/welcome2.gif 1 -
+/liquido/gfx/menubar.gif 1 http://www.mm-cmm.de/liquido/body.php
+/liquido/components/contents/login.php 1 http://www.mm-cmm.de/liquido/head.php
+/liquido/container/21/top-over.gif 93 http://www.mm-cmm.de:8080/webkit/DoLogoutServlet
+/liquido/components/newsletter/components/newsletter/right.php 4 http://www.mm-cmm.de/liquido/components/newsletter/
+/liquido/components/contents/liquido/container/9999/7x7orang.gif 17 http://www.mm-cmm.de/liquido/components/contents/body.php
+/<xcontainer>news_01.gif 1 http://www.mm-cmm.de/liquido/components/contents/body.php
+/gfx/info2.gif 2 http://www.mm-cmm.de/liquido/body.php
+/liquido/testest.html 17 -
+/head.php 4 http://www.mm-cmm.de/liquido/
+/<xcontainer>news_05.gif 1 http://www.mm-cmm.de/liquido/components/contents/body.php
+/templates/Ralf/kis_login.jdp 1 -
+/templates/Ralf/liquido/container/9999/5x5rose.gif 1 http://www.mm-cmm.de/templates/Ralf/cpis_login.jsp
+/components/editors/gfx/logo.gif 1 http://www.mm-cmm.de/liquido/components/editors/lib/sendaccess.php
+/liquido/medialib//small.jpg 5 http://www.mm-cmm.de/liquido/components/medialibrary/list_functions_picture.php
+/<xcontainer>7x7orang.gif 28 http://www.mm-cmm.de/page.php
+/liquido/components/contents/help/gfx/page.gif 1 http://www.mm-cmm.de/liquido/body.php
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start of last visit date] - [Last page of last visit]
+# [Start of last visit date] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 52
+217.110.82.50 3820 18833 57246227 20030926145128
+217.229.234.193 1367 2473 7819617 20030908122734
+217.85.67.195 916 2390 9530096 20030922190510
+217.85.78.176 803 1556 4955960 20030905202921
+217.229.238.108 679 2177 5566426 20030901042630
+194.114.62.67 598 2580 20134185 20030930160415
+217.160.209.145 492 59512 735724560 20030925142549
+217.229.233.62 418 1761 4045870 20030902112805
+194.114.62.38 380 1698 12578064 20030930155034
+217.85.72.140 375 1676 3380426 20030902170439
+217.85.68.88 31 172 601386 20030924153139
+217.85.79.220 347 1386 5243101 20030921185445
+80.142.70.171 17 98 60988 20030923200148
+217.230.173.73 29 254 187375 20030906154703
+212.4.174.81 1 1 625 20030919110446
+217.80.216.165 116 565 1254895 20030901100928
+217.85.76.171 0 8 55806 
+217.229.235.186 236 796 4027201 20030918123533
+217.80.216.159 29 71 85058 20030904104728
+217.229.238.47 172 535 1939101 20030909213120
+217.85.71.237 48 241 1171940 20030909115145
+80.142.75.132 24 193 169838 20030903220042
+212.95.252.16 4 4 17451 20030919182952
+217.5.84.206 74 120 577190 20030901003516
+217.85.74.59 0 6 33043 
+217.85.65.210 44 179 426925 20030930202521
+217.85.71.43 270 1051 3349104 20030905114219
+80.134.245.245 6 67 226994 20030916194912
+217.85.75.51 53 277 512763 20030923203738
+80.134.253.246 15 175 941378 20030909190358
+217.229.238.179 75 103 330140 20030926174221
+62.154.249.162 25 524 1659394 20030908174652
+217.230.174.54 102 507 592039 20030906011405
+217.85.68.164 31 115 275678 20030925133420
+217.80.216.179 8 49 30643 20030902153952
+217.229.237.219 30 104 223771 20030917105816
+212.4.174.88 1 1 625 20030919102534
+217.85.77.65 98 409 1772901 20030917141546
+194.114.62.37 370 2009 16063747 20030930144248
+217.229.234.58 22 89 270064 20030919144210
+217.85.76.48 113 285 1234733 20030909132113
+217.80.216.180 7 7 34394 20030904225604
+217.5.84.217 123 513 1884723 20030918154723
+217.80.216.157 33 75 176092 20030903162648
+217.229.236.189 4 22 26104 20030921121337
+217.229.235.58 12 48 83291 20030916165838
+217.85.74.238 47 290 1068542 20030912191338
+213.239.193.66 0 34 343852 
+217.4.128.21 3 7 150407 20030924104030
+217.85.71.53 59 148 242183 20030903201019
+217.85.74.5 141 678 2407704 20030910165909
+80.142.70.172 23 107 72159 20030917205306
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 26
+20030901 1683 10624 69273761 13
+20030902 1087 9225 73091438 11
+20030903 463 4374 37760950 9
+20030904 480 3192 27116884 10
+20030905 892 3444 22449004 4
+20030906 133 1263 5810132 3
+20030907 398 810 1936178 2
+20030908 1178 6471 50041471 10
+20030909 1000 9037 84854975 17
+20030910 802 12536 114989698 11
+20030911 175 1732 13621539 1
+20030912 81 962 8761204 4
+20030914 0 8 55806 0
+20030915 67 1620 17394964 5
+20030916 58 996 9725767 5
+20030917 466 2957 20183103 7
+20030918 590 5467 60427821 11
+20030919 218 3047 30826129 7
+20030921 351 2204 17141201 3
+20030922 1021 6031 58190734 7
+20030923 169 1215 5871761 9
+20030924 615 11990 102988051 8
+20030925 443 3451 30160612 7
+20030926 115 647 4759742 4
+20030929 68 1267 13594229 4
+20030930 138 2409 29779625 5
+END_DAY
+
+# Worm ID - Hits - Last visit
+# The 10 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 39
+5mn-15mn 15
+0s-30s 44
+2mn-5mn 17
+30s-2mn 20
+15mn-30mn 19
+30mn-1h 23
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 121
+/index.php 1969 6138707 39 42
+/page.php 1738 22462870 6 72
+/liquido/components/contents/body.php 1308 25347019 0 9
+/liquido/body.php 814 1792577 3 1
+/liquido/head.php 812 2464693 0 16
+/ 750 2428693 87 7
+/liquido/components/contents/left_pane.php 700 5271087 0 1
+/liquido/components/newsletter/body.php 673 5821192 2 5
+/liquido/components/contents/right.php 419 948106 1 0
+/liquido/components/newsletter/right.php 341 1070780 0 0
+/liquido/components/newsletter/left_pane.php 99 170694 1 0
+/liquido/components/newsletter/compose/medialibrary/list_left.php 15 46605 0 0
+/talk2/cc.swf 2 272506 0 1
+/liquido/components/editors/edit_rights.php 44 78120 0 0
+/liquido/components/templates/classes/middle.php 168 594747 0 4
+/liquido/components/templates/left_pane.php 164 850176 0 1
+/liquido/components/newsletter/compose/medialibrary/pic_popup.php 1 317 0 0
+/liquido/components/statistics/reports/awstats.liquido.errors404.html 1 8511 0 0
+/liquido/components/templates/classes/left.php 82 316245 0 0
+/liquido/components/statistics/reports/awstats.liquido.browserdetail.html 1 4646 0 0
+/liquido/components/medialibrary/list_iframe.php 19 24168 0 0
+/liquido/index.php 1 457 0 0
+/phpmyadmin/tbl_dump.php 7 789170 0 1
+/liquido/components/newsletter/compose/medialibrary/selectImage.php 3 1242 0 0
+/newsletter.php 75 104126 1 0
+/liquido/components/statistics/reports/awstats.liquido.allrobots.html 1 2540 0 0
+/phpmyadmin/css/phpmyadmin.css.php 130 286067 0 2
+/templates/Ralf/cpis_login.jsp 1 7189 0 1
+/liquido/components/statistics/reports/awstats.liquido.keyphrases.html 2 4788 0 0
+/liquido/components/statistics/body.php 16 80 0 0
+/liquido/components/templates/right.php 179 7038484 0 0
+/phpmyadmin/queryframe.php 14 12248 0 0
+/liquido/components/medialibrary/list.php 116 56690 0 0
+/phpmyadmin/tbl_addfield.php 5 21985 0 0
+/liquido/components/medialibrary/batch/cropborder.php 4 8622 0 0
+/phpmyadmin/ 14 22592 4 0
+/liquido/components/contents/compose/medialibrary/list_right.php 44 10164 0 0
+/liquido/components/templates/structures/middle.php 147 485346 0 1
+/liquido/components/statistics/reports/awstats.liquido.refererse.html 1 2501 0 0
+/liquido/components/statistics/reports/awstats.liquido.lastrobots.html 1 2527 0 0
+/liquido/components/medialibrary/list_left.php 127 750130 0 0
+/liquido/components/templates/classes/body.php 75 39900 0 0
+/liquido/components/medialibrary/pic_popup.php 11 3516 0 1
+/liquido/components/statistics/reports/awstats.liquido.allhosts.html 1 7475 0 0
+/liquido/components/newsletter/compose/medialibrary/index.php 3 1887 0 0
+/phpmyadmin/db_details_structure.php 16 103511 0 0
+/liquido/components/statistics/reports/awstats.liquido.unknownip.html 1 7746 0 0
+/liquido/help/index.php 1 1207 0 0
+/phpmyadmin/read_dump.php 2 5336 0 0
+/liquido/components/templates/structures/left.php 36 124851 0 0
+/liquido/login.php 127 267360 4 0
+/liquido/components/contents/compose/medialibrary/index.php 9 5679 0 0
+/liquido/components/statistics/contentstats/index.php 2 29399 0 0
+/liquido/components/medialibrary/list_details.php 112 227847 0 0
+/liquido/components/contents/compose/medialibrary/selectImage.php 8 3312 0 0
+/phpmyadmin/db_details_export.php 6 23660 0 0
+/liquido/components/newsletter/compose/medialibrary/list_iframe.php 3 3813 0 0
+/konzertkasse/kk-frameset.html 4 1608 0 0
+/liquido/components/templates/compose/middle.php 105 647050 0 0
+/phpmyadmin/sql.php 22 101159 0 0
+/liquido/components/statistics/reports/awstats.liquido.unknownos.html 1 2661 0 0
+/liquido/components/contents/compose/medialibrary/list_left.php 44 172791 0 0
+/talk2/cc.html 1 672 0 0
+/phpmyadmin/db_details.php 1 2203 0 0
+/liquido/components/statistics/reports/awstats.liquido.urlentry.html 1 9885 0 0
+/liquido/components/statistics/reports/awstats.liquido.urlexit.html 1 15247 0 0
+/liquido/components/contents/compose/medialibrary/list_details.php 44 54918 0 0
+/liquido/components/contents/compose/templates/img_comp_middle.php 5 2567 0 0
+/liquido/components/newsletter/ 2 1446 0 0
+/liquido/components/statistics/left_pane.php 38 73246 0 2
+/phpmyadmin/tbl_change.php 3 10443 0 0
+/liquido/components/medialibrary/list_newFolder.php 2 2976 0 0
+/liquido/components/newsletter/compose/medialibrary/list_columnshead.php 3 2754 0 0
+/liquido/components/contents/compose/templates/img_comp_top.php 5 2615 0 0
+/liquido/components/contents/compose/medialibrary/list_iframe.php 9 11439 0 0
+/liquido/components/statistics/sysinfo/index.php 11 174226 0 1
+/liquido/components/statistics/reports/awstats.liquido.lasthosts.html 1 7480 0 0
+/liquido/components/editors/detail_editor.php 133 272346 2 2
+/templates/screendesign/sitemap-dummy.htm 2 9790 0 0
+/liquido/components/editors/bottom.php 46 283030 0 1
+/liquido/components/medialibrary/list_edit.php 1 3403 0 0
+/liquido/components/statistics/reports/awstats.liquido.alldomains.html 2 6020 0 0
+/talk2/ 1 2987 1 0
+/phpmyadmin/tbl_properties_export.php 1 4188 0 0
+/templates/Ralf/kis_login.jsp 1 7629 0 0
+/liquido/components/editors/list_columnshead.html 12 3725 0 0
+/liquido/components/newsletter/compose/image.php 1 803 0 0
+/info.php 3 69911 0 1
+/liquido/components/contents/compose/medialibrary/list_columnshead.php 9 8280 0 0
+/liquido/components/newsletter/compose/medialibrary/list.php 15 7245 0 0
+/liquido/components/contents/compose/medialibrary/list.php 44 21279 0 0
+/liquido/components/templates/structures/body.php 31 16337 0 0
+/liquido/components/statistics/reports/awstats.liquido.unknownbrowser.html 1 2589 0 0
+/liquido/components/statistics/reports/awstats.liquido.urldetail.html 1 63600 0 0
+/liquido/components/statistics/reports/awstats.liquido.keywords.html 1 2495 0 0
+/club-partner/ 18 85 1 0
+/liquido/components/medialibrary/list_columnshead.html 16 4176 0 0
+/liquido/components/medialibrary/list_delete.php 12 20776 0 0
+/screendesign/newsletter.htm 1 0 0 0
+/liquido/components/editors/lib/sendaccess.php 3 1884 0 0
+/phpmyadmin/tbl_properties.php 2 5948 0 0
+/liquido/components/medialibrary/list_ftp_window.php 2 5632 0 0
+/liquido/components/editors/top.php 15 11197 0 0
+/liquido/components/medialibrary/list_right.php 99 23562 0 1
+/liquido/ 120 54840 25 0
+/phpmyadmin/tbl_properties_structure.php 17 102923 0 0
+/phpmyadmin/main.php 14 36585 0 0
+/liquido/components/statistics/reports/awstats.liquido.osdetail.html 2 9943 0 0
+/liquido/components/newsletter/compose/medialibrary/list_right.php 15 3465 0 0
+/liquido/components/newsletter/compose/medialibrary/list_details.php 15 17996 0 0
+/liquido/components/contents/compose/image.php 5 3019 0 0
+/printout.php 4 7290 0 0
+/liquido/components/statistics/reports/awstats.liquido.html 8 448393 0 1
+/phpmyadmin/left.php 27 50226 0 0
+/konzertkasse/konzertkasse.html 4 924 0 0
+/liquido/components/contents/compose/templates/img_comp_bottom.php 5 4764 0 0
+/liquido/components/contents/detail/right.php 1 233 0 0
+/liquido/components/templates/body.php 208 1884394 0 2
+/liquido/components/medialibrary/list_functions_picture.php 11 17917 0 1
+/liquido/components/medialibrary/list_uploadwindow.php 13 51058 0 0
+/liquido/components/editors/detail_group.php 25 32691 0 0
+END_SIDER

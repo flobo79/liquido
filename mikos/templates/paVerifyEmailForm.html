@@ -1,0 +1,45 @@
+<form id="formCheckPartnerBNR" name="formCheckMemberNumber" method="post" action="/mikos/libs/ajax.php"  enctype="application/x-www-form-urlencoded" onsubmit="return false;">
+	<h3>Schritt 1:</h3><br>
+	<label for="checkMemberNumner" style="width:150px; display:block;float:left; ">Ihre Betriebsnummer:</label><input type="text" value="" name="checkPartnerBNR" class="inputclass_p" id="checkPartnerBNR" style="float:left;"> <input type="submit" name="submit_form2" id="submit_formx" class="submit" value="prüfen" >
+	<input type="hidden" name="class" value="CPIS" />
+	<input type="hidden" name="cpis_action" value="ajax_loadSecretQuestion" />
+</form>
+
+<div id="formDetails" style="display:none;">
+	<form id="mikos_register" name="mikos_register" method="post" action="/mikos/libs/ajax.php" onsubmit="return false;" enctype="application/x-www-form-urlencoded" >
+	
+	<h3 style="margin-top:15px;">Schritt 2:</h3>
+	
+	<table cellpadding="4" cellspacing="4" border="0" style="margin-left: -6px;">
+	<tr>
+	  <td class="plain">Geheime Frage:</td>
+	  <td class="bold" id="secretQuestion"></td>
+	</tr>
+	<tr>
+	  <td class="plain">Geheime Antwort:</td>
+	  <td class="bold"><input class="inputclass_p" name="secretanswer" type="text" id="secretanswer" value="" /></td>
+	</tr>
+	<tr>
+	  <td class="plain" width="150">Neue E-Mail:</td>
+	  <td class="bold"><input class="inputclass_p" name="newemail" type="text" id="newemail" value="" /></td>
+	</tr>
+	<tr>
+	  <td class="plain">Neue E-Mail wiederholen:</td>
+	  <td class="bold"><input class="inputclass_p" name="newemailrepeat" type="text" id="newemailrepeat" value="" /></td>
+	</tr>
+	<tr>
+	  <td class="plain">Sichtcode:</td>
+	  <td class="bold"><input class="inputclass_p" name="captcha_code" type="text" id="captcha_code" value="" /> <img src="/mikos/libs/captcha.php" /></td>
+	</tr>
+	<tr>
+	  <td>
+		<input type="hidden" value="" id="partnerBNR" name="partnerBNR" />
+		<input name="cpis_action" type="hidden" id="cpis_action" value="doSetNewMail" /><input type="hidden" name="class" value="CPIS" /></td>
+	  <td><input class="submit" type="submit" name="submit_form" id="submit_form" value="Abschicken" /></td>
+	</tr>
+	</table>
+	</form>
+</div>
+
+<div id="loader"></div>
+<div id="output"></div>

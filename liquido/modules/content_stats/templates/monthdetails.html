@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Monatsdetails</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<table width="291" border="0" class="statstable">
+  <tr>
+    <th>&nbsp;</th>
+    <th>Views</th>
+    <th>Visits</th>
+  </tr>
+  {foreach name=stats from=$stats item="stat"}
+  <tr class="row{cycle values="1,2"}">
+    <td>{$stat.title} <!-- {$stat.page_id} --></td>
+    <td>{$stat.visits}</td>
+    <td>{$stat.views}</td>
+  </tr>
+  {foreachelse}
+  <tr>
+    <td colspan="3">Keine Statistikdaten gefunden. </td>
+  </tr>
+  {/foreach}
+</table>
+</body>
+</html>

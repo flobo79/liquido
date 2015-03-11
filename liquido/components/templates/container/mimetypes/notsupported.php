@@ -1,0 +1,1 @@
+der Dateityp <?php echo $containerobj['mime'][1] ?> wird nicht unterstützt

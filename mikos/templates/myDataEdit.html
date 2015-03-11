@@ -1,0 +1,111 @@
+<script type="text/javascript">
+function popup (url,w,h) {
+ fenster = window.open(url, "MEV", "width="+w+",height="+h+",toolbar=0,resizable=yes,scrollbars=yes");
+ fenster.focus();
+ return false;
+}
+</script>
+
+<div id="Edit" class="floating">
+<div class="background"></div>
+<div id="edit_window" class="window" style="width:400px; margin-left:-200px">
+	<form method="post" id="mikos_editMyData" action="/mikos/libs/ajax.php" name="edit" enctype="application/x-www-form-urlencoded" onsubmit="return false;" >
+	<input type="hidden" name="class" value="KIS" />
+	<input type="hidden" name="kis_action" value="doEditMyData" />
+	<table cellpadding="4" cellspacing="4" border="0" style="margin-left: -6px;">
+	  <tr>
+	  	<td class="plain">Mitgliedsnummer:</td>
+	
+	  	<td class="bold">[{$custInfo->memberNumber}]</td>
+	  </tr>
+	  <tr>
+		  <td class="plain">Name:</td>
+		  <td class="bold">[{$custInfo->salutation}] [{$custInfo->firstName}] [{$custInfo->surname}]</td>
+	  </tr>
+	  <tr>
+		  <td class="plain">Straße, Nr, Zusatz:*</td>
+		  <td class="bold"><input type="text" name="street" id="street" class="inputclass_p" value="[{$custInfo->street|urldecode|htmlspecialchars}]" size="20" maxlength="50" /> <span id="n_street" class="error"></span> &nbsp;<input type="text" id="houseNumber" name="houseNumber" class="inputclass_p" value="[{$custInfo->houseNumber|urldecode|htmlspecialchars}]" size="3" maxlength="5"/><span id="n_houseNumberAdd" class="error"></span> &nbsp;<input type="text" id="houseNumberAdd" name="houseNumberAdd" class="inputclass" value="[{$custInfo->houseNumberAdd|urldecode|htmlspecialchars}]" size="3" maxlength="5"/><span id="n_houseNumberAdd" class="error"></span></td>
+	  </tr>
+	  <tr>
+		  <td class="plain">PLZ, Ort:*</td>
+		  <td class="bold"><input type="text" name="zip" id="zip"class="inputclass_p" value="[{$custInfo->zip|urldecode|htmlspecialchars}]" size="5" maxlength="5"/> &nbsp;<input type="text" id="city" name="city" class="inputclass_p" value="[{$custInfo->city|urldecode|htmlspecialchars}]" size="18" maxlength="50" /><span id="n_zip" class="error"></span><span id="n_city" class="error"></span></td>
+	  </tr>
+	  <tr>
+		<td class="plain">Land:</td>
+		<td class="bold">
+	  [{html_options name=countryName id=countryName options=$countries selected=$custInfo->countryName}]</td>
+	  </tr>
+	  <tr>
+		  <td class="plain">Telefon:*</td>
+		  <td class="bold"><input type="text" name="telephone" id="telephone" class="inputclass" value="[{$custInfo->telephone|urldecode|htmlspecialchars}]" maxlength="30" size="30" /><span id="n_telephone" class="error"></span></td>
+	
+	  </tr>
+	  <tr>
+		  <td class="plain">Mobilnummer:*</td>
+		  <td class="bold"><input type="text" name="mobile" id="mobile" value="[{$custInfo->mobile|urldecode|htmlspecialchars}]" class="inputclass" size="30" maxlength="30" /><span id="n_mobile" class="error"></span></td>
+	
+	  </tr>
+	  <tr>
+		  <td class="plain">Fax:*</td>
+		  <td class="bold"><input type="text" name="fax" id="fax" value="[{$custInfo->fax|urldecode|htmlspecialchars}]" class="inputclass" size="30" maxlength="30" /><span id="n_fax" class="error"></span></td>
+	
+	  </tr>
+	
+	  <tr>
+		  <td class="plain">E-Mail:*</td>
+		  <td class="bold"><input type="text" name="email" id="email" class="inputclass_p"  value="[{$custInfo->email|urldecode|htmlspecialchars}]" maxlength="50" size="30" />
+	  <span id="n_email" class="error"></span></td>
+	  </tr>
+	
+	  <tr>
+		  <td class="plain">Geburtstag:</td>
+		  <td class="bold"><input type="text" name="birthday" id="birthday" class="inputclass"  value="[{$custInfo->birthday|urldecode|htmlspecialchars}]" maxlength="50" size="30" />
+	  <span id="n_birthday" class="error"></span></td>
+	  </tr>
+		<tr>
+		  <td class="plain">Password ändern:</td>
+		  <td class="bold">
+		  </td>
+		  </tr>
+		
+		<tr>
+		  <td class="plain">altes Passwort:</td>
+		  <td class="bold"><input type="password" name="oldpassword" id="oldpassword" class="inputclass" value="" size="20" maxlength="20" /><span id="n_website" class="error"><input type="hidden" id="d_oldpassword" /></span>
+		  </td>
+		  </tr><tr>
+		  <td class="plain">neues Passwort:</td>
+		  <td class="bold"><input type="password" name="newpassword" id="newpassword" class="inputclass" value="" size="20" maxlength="20" /><span id="n_website" class="error"><input type="hidden" id="d_newpassword" /></span>
+		  </td>
+		  </tr><tr>
+		  <td class="plain">neues Passwort wiederholen:</td>
+		  <td class="bold"><input type="password" name="newpassword2" id="newpassword2" class="inputclass" value="" size="20" maxlength="20" /><span id="n_website" class="error"><input type="hidden" id="d_newpassword2" /></span>
+		  </td>
+		  </tr>
+	
+	  <tr>
+	  <td class="bold" style="text-align: right;"><input type="checkbox" name="is_maa" id="is_maa" value="1" [{if $custInfo->is_maa}]checked[{/if}] />
+		<input type="hidden" id="d_is_maa" value="" />
+	  </td>
+	  <td class="plain" style="font-size: 9px;">Ja, ich bin damit einverstanden, dass meine vorstehenden personenbezogenen Daten (einschließlich meiner Telefonnummer und E-Mail-Adresse) zum Zwecke der <a class="copy" style="font-size: 9px;" href="http://www.volkswagen.de/vwcms_publish/vwcms/master_public/virtualmaster/de3/login/login/rechtliches/datenschutz0/datenschutz.html" target="_blank" onclick="return popup(this.href,800,600);">persönlich auf mich zugeschnittenen Werbung und Marktforschung</a> von der Volkswagen AG, den <a class="copy" style="font-size: 9px;" href="http://www.volkswagenag.com/vwag/vwcorp/content/de/homepage.html" target="_blank" onclick="return popup(this.href,1024,768);">Volkswagen Konzerngesellschaften</a> sowie den von mir ausgewählten Volkswagen Partnern (Händlern) verarbeitet und genutzt werden</td>
+	  </tr>
+		
+		<tr>
+			<td>&nbsp;</td>
+			<td class="plain" style="font-size: 9px;">Alle mit * gekennzeichneten Felder benötigen wir, um Ihnen den bestmöglichen Service bieten zu können.</td>
+		</tr>
+		  
+	  <tr>
+	  <td class="plain"> </td>
+	  <td class="bold">
+	  	<input type="button" id="bu_submit" class="submit" value="Speichern" /> 
+	  	<img src="/images/spacer.gif" width="8px" /><input type="button" id="bu_cancel" class="resetclass" value="Abbrechen" />
+	  	<div id="loader"></div><div id="output"></div>
+	  </td>
+	
+	  </tr>
+	</table>
+	<div class="mand"> = Pflichtfeld</div>
+	<div style="clear:left;"></div>
+	</form>
+</div>
+</div>

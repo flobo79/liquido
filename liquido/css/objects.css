@@ -1,0 +1,62 @@
+.subhead {
+	font-weight: bold;
+
+}
+
+a:link {
+  font-family: Arial;
+}
+.head25 {
+	margin-bottom: 25px;
+}
+.head15 {
+	margin-bottom: 15px;
+}
+
+.kv {
+	text-align:left;
+	width:100%;
+	background-color: #E6E6EB;
+	margin-top:0px;
+	margin-bottom:0px;
+	_margin-top:-3px;
+	_margin-bottom:-3px;
+	padding: 0px;
+}
+
+.kv img
+{
+	margin: 0px;
+	margin-bottom:0px;
+	padding: 0px;
+}
+
+
+.subnavi2 {
+	font-weight: bold;	
+	text-align:left;
+	height: 20px; 
+	background-color: #9999A3;
+	color:#FFFFFF;
+	width:780px;
+padding-top: 0px;
+	margin-top:0px;
+
+}
+
+*:first-child+html .subnavi2 { margin-top: -3px; }
+
+
+
+.startpage
+{
+	border-bottom: 1px solid #5C5C61;
+}
+
+.seperator
+{
+	margin-top: 12px;
+	margin-bottom: 20px;
+	border-top: 1px solid #E6E6EB;
+	width: 100%;
+}

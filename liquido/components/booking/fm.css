@@ -1,0 +1,40 @@
+body, html { margin:0; padding:0; width: 100%; text-align:center; }
+#bk_pagebody { margin: 0 auto; width:900px; }
+#icons {  float:left; margin-top:10px; }
+#iconlist { margin:0; padding:0;}
+#iconlist li {  display: inline; list-style-type: none; float: left; font-family: verdana; padding: 0 10px 0 10px; font-size:10px; } 
+#searchbox { float:right; margin-right: 20px; margin-top:5px;  }
+#topmenue { background: #F5F5F5 url(gfx/topmenu.gif) repeat-x bottom; width:100%; height:90px; border: solid 1px #DDDDDD; }
+#listbox { width:100%; height:80%; }
+iframe { border: solid 1px #DDDDDD; }
+#searchbox {
+	height: 23px;
+	width: 138px;
+	background-image: url(gfx/searchbg.gif); 
+	margin:15px 10px 0 0;
+	float:right;
+	text-align:center;
+	background-repeat: no-repeat;
+}
+#searchelem { margin: 5px 5px 0 10px; text-align: right; }
+#searchbox input { font-size: 10px;	width:85px;	border:0; float:left; margin:0 0 0 15px; }
+.activeicon { font-weight: bold; }
+.icon {  width:60px; text-align:center; }
+
+/* toolbar-extensions */
+#booking_tools {
+	font-family:verdana;
+	font-size:10px;
+	float:left;
+	width:890px;
+	border-top: 1px solid #DDDDDD;
+	padding-left:10px;
+	margin-top:5px;
+	padding-top:3px;
+}
+
+#booking_tools select {
+	font-size:10px;
+	font-family:verdana;
+}
+

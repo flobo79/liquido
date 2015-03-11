@@ -1,0 +1,171 @@
+[{if $custInfo->webStatus > 1}] 
+<div id="addMember" class="button" style="clear:both;  margin-bottom:10px;" >Neues Mitglied einmelden </div>
+[{/if}]
+
+<div id="myRequests" style="clear:both;">
+	<h3>Mitgliedsanträge</h3>
+	<div id="myRequestsList">
+[{include file='paMyMemberList.html' myMemberRequests=$myMemberRequests}]
+	</div>
+</div>
+
+[{if $custInfo->webStatus > 1}] 
+<div id="editMember" style="display:none;" class="floating">
+	<div class="background"></div>
+		<div class="loading"></div>
+		<form name="editMember" id="form_editMember" method="post" action="/mikos/libs/ajax.php" class="window" style="width:700px; margin-left:-350px;" >
+			<h3>Neues Mitglied einmelden.</h3>
+			<table width="320" border="0" cellpadding="4" cellspacing="4" style="float:left;" id="paMemberPersonData">   
+			<tr>
+			<td class="plain" width="115">Anrede:</td>
+		      <td class="bold">
+					<div id="gender" style="width:160px;">
+						<input type="radio" name="gender" value="Herr" style="width:12px;" checked="checked" /> Herr
+						<input type="radio" name="gender" value="Frau"  style="width:12px;"/> Frau
+					</div>
+				</td>
+			  </tr>
+			  <tr>
+			    <td class="plain">Titel:</td>
+			    <td class="bold"><input type="text" name="frontTitle" id="frontTitle" class="inputclass" value="" size="20" /></td>
+			  </tr>
+			  <tr>
+			    <td class="plain">Vorname:</td>
+			    <td class="bold"><input type="text" name="firstname" id="firstname" class="inputclass_p" value="" size="20" /></td>
+			  </tr>
+			  <tr>
+			    <td class="plain">Nachname:</td>
+			    <td class="bold"><input type="text" name="surname" id="surname" class="inputclass_p" value="" size="20" /></td>
+			  </tr>
+			<tr>
+			    <td class="plain">Namenszusatz:</td>
+			    <td class="bold"><input type="text" name="nameAdd" id="nameAdd" class="inputclass" value="" size="20" /></td>
+			  </tr>
+			  <tr>
+			    <td class="plain">Telefonnummer:</td>
+			    <td class="bold"><input type="text" name="phone" id="phone" class="inputclass_p" value="" size="20" /></td>
+			  </tr>
+			  <tr>
+			    <td class="plain">E-Mail:</td>
+			    <td class="bold"><input type="text" name="email" id="email" class="inputclass" value="" size="20" /></td>
+			  </tr>
+			<tr>
+			    <td class="plain">Straße, Hausnummer, Zusatz:</td>
+			    <td class="bold">
+					<input type="text" name="street" id="street" class="inputclass_p" value=""  style="width:100px;" maxlength="50"/>
+		      		<input type="text" name="houseNumber" id="houseNumber" class="inputclass_p" value=""  style="width:20px;" maxlength="10" />
+					<input type="text" name="houseNumberAdd" id="houseNumberAdd" class="inputclass" value=""  style="width:20px;" maxlength="10" />
+				</td>
+			  </tr>
+			<tr>
+			    <td class="plain">Postleitzahl, Ort:</td>
+			    <td class="bold">
+					<input type="text" name="zip" id="zip" class="inputclass_p" value="" style="width:40px;" maxlength="5" />
+					<input type="text" name="city" id="city" class="inputclass_p" value=""  style="width:110px;" maxlength="50" />
+				</td>
+			  </tr>
+			<tr>
+			    <td class="plain">Land:</td>
+			    <td class="bold">[{html_options name=countryName id=countryName options=$countries selected=$custInfo->countryName}]</td>
+			  </tr>
+			<tr>
+			    <td class="plain">Geburtstag:</td>
+			    <td class="bold"><input type="text" name="birthday" id="birthday" class="inputclass tip" value="" size="20"  title="Datumseingabe : Bitte im Format dd.mm.jjjj (Bsp. 29.07.1979) angeben." maxlength="10" />
+				
+				
+				</td>
+			  </tr>
+			<tr>
+			    <td class="plain" valign="top">Betreuungsart:</td>
+			    <td class="bold">
+				Vollbetreuung
+				<!-- 
+				<select name="contracttype" id="contracttype" class="tip" onchange="$('hinweis_betreuung').style.display=(this.value=='Teilbetreuung')?'block':'none'" title="Betreuungsart : z.B. Vollbetreuung oder Teilbetreuung.">
+					<option value="Vollbetreuung">Vollbetreuung</option>
+					<option value="Teilbetreuung">Teilbetreuung</option> 
+				</select>
+				<div class="smalltext" style="display:none;margin-top:5px;" id="hinweis_betreuung">
+					Eine Teilbetreuung ist nur möglich, wenn zu dem entsprechenden Mitglied bereits eine Vollbetreuung vorliegt.
+				</div>
+				-->
+				<input type="hidden" name="contracttype" value="Vollbetreuung" />
+				</td>
+			  </tr>
+		  </table>
+		
+
+			<table width="320" border="0" cellpadding="4" cellspacing="4" style="width:230px;float:left;" id="paMemberCarData">
+			  <tr>
+			    <td class="bold" colspan="2">Fahrzeug des Mitglieds</td>
+			  </tr>
+				<tr>
+					<td class="plain" width="150">Hersteller:</td>
+					<td class="bold"><input class="inputclass" type="text" name="carBrand" id="carBrand"  maxlength="50" /></td>
+				</tr>
+				<tr>
+					<td class="plain">Modell:</td>
+					<td class="bold"><input class="inputclass" type="text" name="carModel" id="carModel"  maxlength="50" /></td>
+				</tr>
+				<tr>
+					<td class="plain">Typ:</td>
+					<td class="bold"><input class="inputclass" type="text" name="carType" id="carType"  maxlength="50" /></td>
+				</tr>
+				<tr>
+					<td class="plain">Fahrgestellnummer:</td>
+					<td class="bold"><input class="inputclass" type="text" name="carvinNr" id="carvinNr"  maxlength="50" /></td>
+				</tr>
+				<tr>
+					<td class="plain">Modellgruppe:</td>
+					<td class="bold"><input class="inputclass" type="text" name="carModelGroup" id="carModelGroup"  maxlength="50" /></td>
+				</tr>
+				<tr>
+					<td class="plain">Modellschlüssel:</td>
+					<td class="bold"><input class="inputclass" type="text" name="carModelKey" id="carModelKey"  maxlength="50" /></td>
+				</tr>
+				<tr>
+					<td class="plain">Farbschlüssel:</td>
+					<td class="bold"><input class="inputclass" type="text" name="carColorKey" id="carColorKey"  maxlength="50" /></td>
+				</tr>
+				<tr>
+					<td class="plain">Baujahr:</td>
+					<td class="bold"><input class="inputclass tip" type="text" name="carBuildYear" id="carBuildYear" title="Jahresangabe : Bitte volles Jahr als vierstellige Zahl angeben." maxlength="4" /></td>
+				</tr>
+				<tr>
+					<td class="plain">Auslieferungsdatum:</td>
+					<td class="bold"><input class="inputclass tip" type="text" name="carDeliveryDate" id="carDeliveryDate" title="Datumseingabe : Bitte im Format dd.mm.jjjj (Bsp. 29.07.1979) angeben." maxlength="10" /></td>
+				</tr>
+				<tr>
+					<td class="plain">KFZ-Kennzeichen:</td>
+					<td class="bold"><input class="inputclass tip" type="text" name="carLicenceNr" id="carLicenceNr" title="Kfz Kennzeichen :: Das Kennzeichen besteht aus max. 3 Buchstaben + Bindestrich + max 3 Buchstaben + Leerzeichen + max 4 Zahlen." maxlength="12" /></td>
+				</tr>
+				<tr>
+					<td class="plain">nächste HU:</td>
+					<td class="bold"><input class="inputclass tip" type="text" name="carInspectionGeneralDt" id="carInspectionGeneralDt"  title="Datumseingabe : Bitte im Format dd.mm.jjjj (Bsp. 29.07.1979) angeben." maxlength="10" /></td>
+				</tr>
+				<tr>
+					<td class="plain">nächste AU:</td>
+					<td class="bold"><input class="inputclass tip" type="text" name="carInspectionExhaustDt" id="carInspectionExhaustDt"  title="Datumseingabe : Bitte im Format dd.mm.jjjj (Bsp. 29.07.1979) angeben."  maxlength="10" /></td>
+				</tr>
+				<tr>
+					<td class="plain">nächste Inspektion:</td>
+					<td class="bold"><input class="inputclass tip" type="text" name="carInspectionDt" id="carInspectionDt" title="Datumseingabe : Bitte im Format dd.mm.jjjj (Bsp. 29.07.1979) angeben." maxlength="10" /></td>
+				</tr>
+				<tr>
+					<td class="plain">Kilometerstand:</td>
+					<td class="bold"><input class="inputclass tip" type="text" name="carKmState" id="carKmState" title="Kilometerstand : Bitte nur Zahl ohne Punkt oder Komma angeben"  maxlength="15" /></td>
+				</tr>
+			</table>
+		
+
+			<div style="clear:both; text-align:center; width:100%; margin-top:15px;">
+				<input type="hidden" name="cpis_action" id="cpis_action" value="doCreateMember" />
+				<input type="hidden" name="class" value="CPIS" />
+				<input type="submit" class="submit" id="submit_form" value="Anlegen" />
+				<input type="button" class="resetclass" value="Abbrechen" id="bu_cancel" /> 
+				<div class="mand"> = Pflichtfeld</div>
+				<div id="output"></div>
+			</div>
+		</form>
+	</div>
+<script language="javascript"> mikos = 'myMember'; </script>
+[{/if}] 

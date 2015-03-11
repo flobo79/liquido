@@ -1,0 +1,14 @@
+<script type="text/javascript">
+  function dateChanged(calendar) {ldelim}
+	if (calendar.dateClicked) {ldelim}
+	  statistic.timestamp.value = calendar.date.getTime() / 1000;
+	  statistic.submit();
+	{rdelim}
+  {rdelim};
+</script>
+<div id="statscalendar"></div>
+<script type="text/javascript">
+var caldate = new Date("{$parsedate}");
+Calendar.setup({ldelim}"ifFormat":"%Y/%m/%d","daFormat":"%Y/%m/%d","flat":"statscalendar","firstDay":1,"date":caldate,"flatCallback":dateChanged{rdelim});
+</script>
+<input name="timestamp" type="hidden" id="timestamp" value="{$timestamp}" />

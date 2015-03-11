@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Gesamtstatistik</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+<select name="year">
+   {html_options output=$yearrange values=$yearrange selected=$year}
+</select>
+<input type="submit" name="Submit" value="Aktualisieren" />
+</form>
+<p><img src="data/{$chart}" /></p>
+<table border="0" cellspacing="0" cellpadding="0" class="statstable">
+  <tr>
+    <th scope="col">Monat</th>
+    <th scope="col">Visits</th>
+    <th scope="col">Views</th>
+  </tr>
+  {foreach name=stats from=$stats item="stat"}
+  <tr class="row{cycle values="1,2"}">
+    <td><a href="?p=monthdetails&y={$year}&m={$stat.month}">{$stat.monthname|escape:"htmlall"}</a></td>
+    <td>{$stat.visits}</td>
+    <td>{$stat.views}</td>
+  </tr>
+  {foreachelse}
+  <tr>
+    <td colspan="3">Keine Statistikdaten gefunden. </td>
+  </tr>
+  {/foreach}
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
